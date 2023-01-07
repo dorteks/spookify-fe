@@ -12,8 +12,8 @@ const config: ThemeConfig = {
 const customThemeConfig: ThemeOverride = {
   components: {
     Button: {},
-    colors: {},
   },
+  colors: {},
 };
 
 const theme = extendTheme({ ...config, ...customThemeConfig });
