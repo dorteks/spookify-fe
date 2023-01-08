@@ -7,29 +7,46 @@ import {
   Stack,
   Avatar,
 } from "@chakra-ui/react";
-import { Main } from "./reusables";
-import {
-  BsFillBookmarkFill,
-  BsSuitHeartFill,
-  BsCalendarEvent,
-} from "react-icons/bs";
+import { TopbarItems } from "./reusables";
+import { BsFillBookmarkFill } from "react-icons/bs";
+import { RiPlayListAddLine } from "react-icons/ri";
+import { AiTwotoneSetting } from "react-icons/ai";
 
 const Topbar = () => {
   return (
     <Box
-      bgColor="red"
+      bgColor="white"
       width="full"
       h="100px"
       display="flex"
       alignContent="center"
       justifyContent="center"
     >
-      <HStack gap="100px">
-        <Img boxSize="50px" borderRadius="30px" bgColor="white" />
-        <Button>Search for music</Button>
-        <Text> Personal Releases </Text>
-        <Text> Create Playlist </Text>
-        <Text>Settings </Text>
+      <Stack direction="row" pt="25px" pb="25px">
+        <Img
+          boxSize="30px"
+          borderRadius="25px"
+          bgColor="gray.400"
+          mr="30px"
+          p="10px"
+        />
+        <Stack>
+          <Button width="100%" borderRadius="25px">
+            Search for music
+          </Button>
+        </Stack>
+        <Stack direction="row" pl="100px">
+          <TopbarItems
+            title={"Personal Release"}
+            leftIcon={<BsFillBookmarkFill />}
+          />
+          <TopbarItems
+            title={"Create Playlist"}
+            leftIcon={<RiPlayListAddLine />}
+          />
+          <TopbarItems title={"Settings"} leftIcon={<AiTwotoneSetting />} />
+        </Stack>
+
         <Avatar
           size="md"
           mr="10px"
@@ -38,7 +55,7 @@ const Topbar = () => {
           borderRadius="25px"
           src=""
         />
-      </HStack>
+      </Stack>
     </Box>
   );
 };

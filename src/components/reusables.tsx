@@ -1,27 +1,7 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Heading,
-  HStack,
-  Img,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
 import React from "react";
-import { IoMdHome } from "react-icons/io";
 import { SlArrowRight } from "react-icons/sl";
-import { BiNetworkChart } from "react-icons/bi";
-import { FaCompass } from "react-icons/fa";
-import { CgEditBlackPoint } from "react-icons/cg";
-import {
-  BsFillBookmarkFill,
-  BsSuitHeartFill,
-  BsCalendarEvent,
-} from "react-icons/bs";
-import { GrHistory } from "react-icons/gr";
-import { RiPlayListFill } from "react-icons/ri";
+import { Avatar, Box, Input, Stack, Text } from "@chakra-ui/react";
+import { SearchIcon } from "@chakra-ui/icons";
 
 type Props = {
   title: React.ReactNode;
@@ -140,9 +120,6 @@ export const Artists = ({ title, leftIcon }: Props) => {
       }}
     >
       <Stack direction="row" ml="15px">
-        {/* <Box mr="10px" pt="3px" pb="3px">
-            {leftIcon}
-          </Box> */}
         <Avatar
           size="sm"
           mr="10px"
@@ -159,6 +136,34 @@ export const Artists = ({ title, leftIcon }: Props) => {
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
+      </Stack>
+    </Stack>
+  );
+};
+
+export const TopbarItems = ({ title, leftIcon }: Props) => {
+  return (
+    <Stack
+      direction="row"
+      pt="15px"
+      pb="15px"
+      pl="20px"
+      p="13px"
+      _hover={{
+        backgroundColor: "#f1faee",
+        p: "13px",
+        borderRadius: "25px",
+        color: "purple.600",
+        fontWeight: "bold",
+      }}
+    >
+      <Stack direction="row" ml="15px">
+        <Box mr="10px" pt="3px" pb="3px" color="gray.500">
+          {leftIcon}
+        </Box>
+        <Text width="140px" fontWeight="bold">
+          {title}
+        </Text>
       </Stack>
     </Stack>
   );
