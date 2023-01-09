@@ -27,11 +27,15 @@ export const Main = ({ title, leftIcon }: Props) => {
         <Box mr="10px" pt="3px" pb="3px" color="gray.500">
           {leftIcon}
         </Box>
-        <Text width="130px" fontWeight="bold">
+        <Text
+          width={["80px", "100px", "130px"]}
+          fontSize={["14px", "16px"]}
+          fontWeight="bold"
+        >
           {title}
         </Text>
       </Stack>
-      <Stack pl="40px">
+      <Stack pl={["20px", "40px"]}>
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
@@ -161,7 +165,7 @@ export const TopbarItems = ({ title, leftIcon }: Props) => {
         <Box mr="10px" pt="3px" pb="3px" color="gray.500">
           {leftIcon}
         </Box>
-        <Text width="140px" fontWeight="bold">
+        <Text width={["120px "]} fontSize="14px" fontWeight="bold">
           {title}
         </Text>
       </Stack>
