@@ -119,6 +119,13 @@
   resolved "https://registry.yarnpkg.com/@chakra-ui/breakpoint-utils/-/breakpoint-utils-2.0.5.tgz#55b571038b66e9f6d41633c102ea904c679dac5c"
   integrity sha512-8uhrckMwoR/powlAhxiFZPM0s8vn0B2yEyEaRcwpy5NmRAJSTEotC2WkSyQl/Cjysx9scredumB5g+fBX7IqGQ==
 
+"@chakra-ui/breakpoint-utils@2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/breakpoint-utils/-/breakpoint-utils-2.0.6.tgz#ed31aeda21ff309eb0102ccd324b1d2096caa08a"
+  integrity sha512-aigYoZdHtV+PNFr/RTHjbIYK49PsMLvwtpZsowKWJ6xDyPKHtfhwZ2VOBTUyaQf4mXgaB9MNOF46zOTJN8RfLQ==
+  dependencies:
+    "@chakra-ui/shared-utils" "2.0.4"
+
 "@chakra-ui/button@2.0.13":
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/@chakra-ui/button/-/button-2.0.13.tgz#5db6aa3425a6bebc2102cd9f58e434d5508dd999"
@@ -318,6 +325,15 @@
     "@chakra-ui/breakpoint-utils" "2.0.5"
     "@chakra-ui/react-env" "2.0.11"
 
+"@chakra-ui/media-query@^3.2.9":
+  version "3.2.9"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/media-query/-/media-query-3.2.9.tgz#204002fe04e56a1abfa0bd5e3ad05bad8c34ae3e"
+  integrity sha512-4vaf8YqgIs5zhaQTLAif+aiiixo9gpk1xiTn4oTiDZQFuTVhKyv4iI93NbAKif/Bls+8XghbMo0rF93DjqRRzg==
+  dependencies:
+    "@chakra-ui/breakpoint-utils" "2.0.6"
+    "@chakra-ui/react-env" "2.0.12"
+    "@chakra-ui/shared-utils" "2.0.4"
+
 "@chakra-ui/menu@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@chakra-ui/menu/-/menu-2.1.5.tgz#73b6db93d6dec9d04ab7c2630a7984e3180fd769"
@@ -467,6 +483,11 @@
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/@chakra-ui/react-env/-/react-env-2.0.11.tgz#d9d65fb695de7aff15e1d0e97d57bb7bedce5fa2"
   integrity sha512-rPwUHReSWh7rbCw0HePa8Pvc+Q82fUFvVjHTIbXKnE6d+01cCE7j4f1NLeRD9pStKPI6sIZm9xTGvOCzl8F8iw==
+
+"@chakra-ui/react-env@2.0.12":
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/react-env/-/react-env-2.0.12.tgz#f5f9fef0bd6fa9983457cb06413cf209acad48e8"
+  integrity sha512-BPTz2cxNKhNc1y5J9cCOYndbGiNulpMwihZLkybLRJ1qzZic4KuD3iGOkagJ81STKoPkKEZWfcjnrQTCJTq1fg==
 
 "@chakra-ui/react-types@2.0.5":
   version "2.0.5"

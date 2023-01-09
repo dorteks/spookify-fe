@@ -1,22 +1,12 @@
-import { Box, Text, Stack, Avatar, Flex } from "@chakra-ui/react";
-import { TopbarItems } from "./reusables";
+import { Flex, Avatar, Stack, Box, Text } from "@chakra-ui/react";
+import { AiTwotoneSetting } from "react-icons/ai";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { RiPlayListAddLine } from "react-icons/ri";
-import { AiTwotoneSetting } from "react-icons/ai";
-import { useMediaQuery } from "@chakra-ui/media-query";
+import { TopbarItems } from "../reusables";
 
-const Topbar = () => {
-  // const [isNotSmallerSCreen] = useMediaQuery("(min-width:600px)");
-
+export const Topbar1560 = () => {
   return (
-    <Box
-      bgColor="gray.50"
-      maxW="100%"
-      h="80px"
-      display="flex"
-      alignContent="center"
-      justifyContent="space-between"
-    >
+    <Box bgColor="gray.50" maxW="100%" h="80px">
       <Flex alignItems="center" flexWrap="wrap" pt="20px" pb="20px">
         <Flex gap="4" alignItems="center" flexWrap="wrap" pl="15px">
           <Avatar
@@ -32,8 +22,8 @@ const Topbar = () => {
               h="30px"
               justifySelf="center"
               textAlign="center"
-              bgColor="gray.200"
-              w="600px"
+              bgColor="blue"
+              w="350px"
               borderRadius="25px"
             >
               Search for music
@@ -41,7 +31,7 @@ const Topbar = () => {
           </Stack>
         </Flex>
 
-        <Stack direction="row" ml="100px">
+        <Stack direction="row" ml="70px">
           <TopbarItems
             title={"Personal Release"}
             leftIcon={<BsFillBookmarkFill />}
@@ -65,5 +55,3 @@ const Topbar = () => {
     </Box>
   );
 };
-
-export default Topbar;

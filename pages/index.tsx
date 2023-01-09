@@ -1,4 +1,12 @@
-import { Box, Grid, GridItem, HStack, Stack, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Card,
+  Grid,
+  GridItem,
+  HStack,
+  Stack,
+  VStack,
+} from "@chakra-ui/react";
 import Body from "../src/components/body";
 import Sidebar from "../src/components/sidebar";
 import Topbar from "../src/components/topbar";
@@ -8,18 +16,15 @@ const Home = () => {
     <Box>
       <Grid
         templateRows="repeat(2, 1fr)"
-        templateColumns="repeat(7, 1fr)"
-        gap={1}
+        templateColumns="repeat(6, 1fr)"
+        pr="5px"
       >
-        <GridItem rowSpan={2} colSpan={1} h="auto">
+        <GridItem rowSpan={2} colSpan={1} bgColor="gray.700">
           <Sidebar />
         </GridItem>
-
-        <GridItem colSpan={6} h="auto">
-          <Stack direction="column">
-            <Topbar />
-            <Body />
-          </Stack>
+        <GridItem colSpan={5}>
+          <Topbar />
+          <Body />
         </GridItem>
       </Grid>
     </Box>

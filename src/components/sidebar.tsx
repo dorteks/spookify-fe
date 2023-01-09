@@ -15,8 +15,8 @@ import { Box, Button, HStack, Img, Text, VStack } from "@chakra-ui/react";
 
 const Sidebar = () => {
   return (
-    <Box width="306px" height="auto" bgColor="#f1faee">
-      <Box pl="20px" pr="10px" pt="25px">
+    <Box w="315px" height="auto" bgColor="#f1faee">
+      <Box pl={["20px"]} pr="10px" pt="25px">
         <HStack>
           <Img
             boxSize="30px"
@@ -24,13 +24,13 @@ const Sidebar = () => {
             bgColor="purple.600"
             mr="10px"
           />
-          <Text fontSize="18px">Constructor UI Kit</Text>
+          <Text fontSize={["16px"]}>Constructor UI Kit</Text>
         </HStack>
       </Box>
-      <Box pl="5px" pr="10px" pt="45px">
+      <Box pl="5px" pr="10px" pt="40px">
         <VStack align="left">
           <Text
-            fontSize="14px"
+            fontSize="12px"
             fontWeight="bold"
             color="gray.700"
             ml="20px"
