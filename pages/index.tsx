@@ -6,6 +6,7 @@ import {
   HStack,
   Stack,
   VStack,
+  Text,
 } from "@chakra-ui/react";
 import Body from "../src/components/body";
 import Sidebar from "../src/components/sidebar";
@@ -14,15 +15,11 @@ import Topbar from "../src/components/topbar";
 const Home = () => {
   return (
     <Box>
-      <Grid
-        templateRows="repeat(2, 1fr)"
-        templateColumns="repeat(6, 1fr)"
-        pr="5px"
-      >
-        <GridItem rowSpan={2} colSpan={1} bgColor="gray.700">
+      <Grid templateColumns={["300px 1fr"]}>
+        <GridItem>
           <Sidebar />
         </GridItem>
-        <GridItem colSpan={5}>
+        <GridItem>
           <Topbar />
           <Body />
         </GridItem>

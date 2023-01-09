@@ -10,13 +10,13 @@ type Props = {
 
 export const TopAlbumsCard = ({ number, title, artist, time }: Props) => {
   return (
-    <Card w="520px" h="80px" justify="center">
+    <Card w="650px" h="80px" justify="center">
       <HStack>
         <Text w="25px" mr="10px" ml="10px" pt="3px" pb="3px" color="gray.500">
           {number}
         </Text>
         <Img boxSize="45px" />
-        <Box w="300px" pr="10px" pl="20px" color="gray.500">
+        <Box w="380px" pr="10px" pl="20px" color="gray.500">
           <Text fontSize="14px" fontWeight="bold">
             {title}
           </Text>

@@ -19,8 +19,8 @@ import { TopSinglesCard } from "./body/topsingles";
 const Body = () => {
   return (
     <Box width="full" h="auto" bgColor="gray.50">
-      <Stack direction="row" pt="30px" pl="70px" gap={8}>
-        <Card w="600px" h="400px" bgColor="gray.500">
+      <Stack direction="row" pt="15px" pb="15px" pl="80px" gap={8}>
+        <Card w="700px" h="360px" bgColor="gray.500">
           <Text pt="40px" pl="80px">
             NEW ALBUM
           </Text>
@@ -31,7 +31,7 @@ const Body = () => {
             DAN + SHAY
           </Text>
         </Card>
-        <Card w="600px" h="400px" bgColor="gray.500">
+        <Card w="700px" h="360px" bgColor="gray.500">
           <Text fontSize="5xl" pt="40px" pl="350px" pr="50px">
             BILLIE EILISH
           </Text>
@@ -41,28 +41,42 @@ const Body = () => {
         </Card>
       </Stack>
 
-      <Stack pt="30px" pl="70px">
-        <HStack align="left">
-          <Box mr="10px" pt="3px" pb="3px" color="gray.500">
-            <AiFillLike size="20px" />
+      <Stack
+        mt="50px"
+        pb="10px"
+        pl="80px"
+        display="flex"
+        alignContent="center"
+        justifyContent="space-between"
+      >
+        <HStack align="center" justify="space-between" w="95%" h="80px">
+          <Stack direction="row">
+            <Box mr="10px" pt="3px" pb="3px" color="gray.500">
+              <AiFillLike size="20px" />
+            </Box>
+            <Text fontSize="16px" fontWeight="bold" color="gray.700">
+              Recommended Albums
+            </Text>
+          </Stack>
+
+          <Box>
+            <Avatar
+              size="md"
+              pt="3px"
+              pb="3px"
+              mr="20px"
+              borderRadius="25px"
+              src=""
+            />
+            <Avatar size="md" pt="3px" pb="3px" borderRadius="25px" src="" />
           </Box>
-          <Text
-            fontSize="16px"
-            fontWeight="bold"
-            color="gray.700"
-            ml="20px"
-            mt="10px"
-            mb="20px"
-          >
-            Recommended Albums
-          </Text>
         </HStack>
       </Stack>
 
-      <Stack direction="row" pt="30px" pl="70px">
+      <Stack direction="row" pt="10px" pl="80px" gap={4}>
         <VStack>
-          <Card w="200px" h="200px" bgColor="gray.500"></Card>
-          <Card w="200px" h="100px" bgColor="gray.300">
+          <Card w="220px" h="200px" bgColor="gray.500"></Card>
+          <Card w="220px" h="100px" bgColor="gray.300">
             <Text pl="20px" pt="20px">
               Good Things
             </Text>
@@ -72,8 +86,8 @@ const Body = () => {
           </Card>
         </VStack>
         <VStack>
-          <Card w="200px" h="200px" bgColor="gray.500"></Card>
-          <Card w="200px" h="100px" bgColor="gray.300">
+          <Card w="220px" h="200px" bgColor="gray.500"></Card>
+          <Card w="220px" h="100px" bgColor="gray.300">
             <Text pl="20px" pt="20px">
               Respect Original
             </Text>
@@ -83,8 +97,8 @@ const Body = () => {
           </Card>
         </VStack>
         <VStack>
-          <Card w="200px" h="200px" bgColor="gray.500"></Card>
-          <Card w="200px" h="100px" bgColor="gray.300">
+          <Card w="220px" h="200px" bgColor="gray.500"></Card>
+          <Card w="220px" h="100px" bgColor="gray.300">
             <Text pl="20px" pt="20px">
               Pressure MAchine
             </Text>
@@ -94,8 +108,8 @@ const Body = () => {
           </Card>
         </VStack>
         <VStack>
-          <Card w="200px" h="200px" bgColor="gray.500"></Card>
-          <Card w="200px" h="100px" bgColor="gray.300">
+          <Card w="220px" h="200px" bgColor="gray.500"></Card>
+          <Card w="220px" h="100px" bgColor="gray.300">
             <Text pl="20px" pt="20px">
               Pyrex Picasso
             </Text>
@@ -105,8 +119,8 @@ const Body = () => {
           </Card>
         </VStack>
         <VStack>
-          <Card w="200px" h="200px" bgColor="gray.500"></Card>
-          <Card w="200px" h="100px" bgColor="gray.300">
+          <Card w="220px" h="200px" bgColor="gray.500"></Card>
+          <Card w="220px" h="100px" bgColor="gray.300">
             <Text pl="20px" pt="20px">
               Chavos's World 2
             </Text>
@@ -116,8 +130,8 @@ const Body = () => {
           </Card>
         </VStack>
         <VStack>
-          <Card w="200px" h="200px" bgColor="gray.500"></Card>
-          <Card w="200px" h="100px" bgColor="gray.300">
+          <Card w="220px" h="200px" bgColor="gray.500"></Card>
+          <Card w="220px" h="100px" bgColor="gray.300">
             <Text pl="20px" pt="20px">
               Just A Matter of S...
             </Text>
@@ -128,8 +142,8 @@ const Body = () => {
         </VStack>
       </Stack>
 
-      <Stack direction="row" mt="60px" ml="70px" gap="8">
-        <Card h="auto" width="600px" bgColor="gray.50">
+      <Stack direction="row" mt="60px" ml="80px" gap="8">
+        <Card h="auto" width="700px" bgColor="gray.50">
           <CardHeader mt="20px">
             <HStack align="left">
               <Box mr="10px" pt="3px" pb="3px" color="gray.500">
@@ -187,7 +201,7 @@ const Body = () => {
           </CardBody>
         </Card>
 
-        <Card h="auto" width="600px" bgColor="gray.50">
+        <Card h="auto" width="700px" bgColor="gray.50">
           <CardHeader mt="20px">
             <HStack align="left">
               <Box mr="10px" pt="3px" pb="3px" color="gray.500">
@@ -246,8 +260,8 @@ const Body = () => {
         </Card>
       </Stack>
 
-      <Stack direction="row" pt="50px" pl="70px" gap={8}>
-        <Card w="400px" h="350px" bgColor="gray.500">
+      <Stack direction="row" pt="50px" pl="80px" gap={6}>
+        <Card w="460px" h="350px" bgColor="gray.500">
           <Text pt="40px" pl="80px">
             THE RADIO SHOW
           </Text>
@@ -255,7 +269,7 @@ const Body = () => {
             LADY GAGA
           </Text>
         </Card>
-        <Card w="400px" h="350px" bgColor="gray.500">
+        <Card w="460px" h="350px" bgColor="gray.500">
           <Text pt="40px" pl="80px">
             NEW ALBUM
           </Text>
@@ -263,7 +277,7 @@ const Body = () => {
             THE KILLERS
           </Text>
         </Card>
-        <Card w="400px" h="350px" bgColor="gray.500">
+        <Card w="460px" h="350px" bgColor="gray.500">
           <Text pt="40px" pl="80px">
             TAYLOR SWIFT OFFICIAL
           </Text>

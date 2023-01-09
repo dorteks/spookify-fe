@@ -10,12 +10,12 @@ import { FaCompass } from "react-icons/fa";
 import { RiPlayListFill } from "react-icons/ri";
 import { BiNetworkChart } from "react-icons/bi";
 import { CgEditBlackPoint } from "react-icons/cg";
-import { Main, Music, Playlists, Artists } from "./reusables";
 import { Box, Button, HStack, Img, Text, VStack } from "@chakra-ui/react";
+import { Artists, Main, Music, Playlists } from "./sidebar/reusables";
 
 const Sidebar = () => {
   return (
-    <Box w="315px" height="auto" bgColor="#f1faee">
+    <Box height="auto" bgColor="#f1faee">
       <Box pl={["20px"]} pr="10px" pt="25px">
         <HStack>
           <Img

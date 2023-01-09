@@ -2,11 +2,11 @@ import { Flex, Avatar, Stack, Box, Text } from "@chakra-ui/react";
 import { AiTwotoneSetting } from "react-icons/ai";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { RiPlayListAddLine } from "react-icons/ri";
-import { TopbarItems } from "../reusables";
+import { TopbarItems } from "../sidebar/reusables";
 
 export const Topbar1560 = () => {
   return (
-    <Box bgColor="gray.50" maxW="100%" h="80px">
+    <Box bgColor="gray.50" width="100%" h="80px">
       <Flex alignItems="center" flexWrap="wrap" pt="20px" pb="20px">
         <Flex gap="4" alignItems="center" flexWrap="wrap" pl="15px">
           <Avatar
