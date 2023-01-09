@@ -25,7 +25,7 @@ const Topbar = () => {
               bgColor="gray.500"
             />
             <Button
-              w={["0px", "150px", "250px", "300px", "400px", "550px"]}
+              w={["0px", "0px", "0px", "370px", "450px", "550px"]}
               ml="30px"
               borderRadius="25px"
             >
