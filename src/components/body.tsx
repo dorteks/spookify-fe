@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { AiFillLike } from "react-icons/ai";
 import { MdShowChart } from "react-icons/md";
+import { RecommendedAlbums } from "./body/albums";
 import { TopAlbumsCard } from "./body/topalbums";
 import { TopSinglesCard } from "./body/topsingles";
 
@@ -74,72 +75,24 @@ const Body = () => {
       </Stack>
 
       <Stack direction="row" pt="10px" pl="80px" gap={4}>
-        <VStack>
-          <Card w="220px" h="200px" bgColor="gray.500"></Card>
-          <Card w="220px" h="100px" bgColor="gray.300">
-            <Text pl="20px" pt="20px">
-              Good Things
-            </Text>
-            <Text pl="20px" pt="5px">
-              Dan + Shay
-            </Text>
-          </Card>
-        </VStack>
-        <VStack>
-          <Card w="220px" h="200px" bgColor="gray.500"></Card>
-          <Card w="220px" h="100px" bgColor="gray.300">
-            <Text pl="20px" pt="20px">
-              Respect Original
-            </Text>
-            <Text pl="20px" pt="5px">
-              Jennifer Hudson
-            </Text>
-          </Card>
-        </VStack>
-        <VStack>
-          <Card w="220px" h="200px" bgColor="gray.500"></Card>
-          <Card w="220px" h="100px" bgColor="gray.300">
-            <Text pl="20px" pt="20px">
-              Pressure MAchine
-            </Text>
-            <Text pl="20px" pt="5px">
-              The Killers
-            </Text>
-          </Card>
-        </VStack>
-        <VStack>
-          <Card w="220px" h="200px" bgColor="gray.500"></Card>
-          <Card w="220px" h="100px" bgColor="gray.300">
-            <Text pl="20px" pt="20px">
-              Pyrex Picasso
-            </Text>
-            <Text pl="20px" pt="5px">
-              Benny the Butcher
-            </Text>
-          </Card>
-        </VStack>
-        <VStack>
-          <Card w="220px" h="200px" bgColor="gray.500"></Card>
-          <Card w="220px" h="100px" bgColor="gray.300">
-            <Text pl="20px" pt="20px">
-              Chavos's World 2
-            </Text>
-            <Text pl="20px" pt="5px">
-              Chavo, Pi'erre Bourne
-            </Text>
-          </Card>
-        </VStack>
-        <VStack>
-          <Card w="220px" h="200px" bgColor="gray.500"></Card>
-          <Card w="220px" h="100px" bgColor="gray.300">
-            <Text pl="20px" pt="20px">
-              Just A Matter of S...
-            </Text>
-            <Text pl="20px" pt="5px">
-              Chavo, Pi'erre Bourne
-            </Text>
-          </Card>
-        </VStack>
+        <RecommendedAlbums title={"Good Things"} artist={"Dan + Shay"} />
+        <RecommendedAlbums
+          title={"Respect Original"}
+          artist={"Jennifer Hudson"}
+        />
+        <RecommendedAlbums title={"Pressure Machine"} artist={"The Killers"} />
+        <RecommendedAlbums
+          title={"Pyrex Picasso"}
+          artist={"Benny the Butcher"}
+        />
+        <RecommendedAlbums
+          title={"Chavoss World 2"}
+          artist={"Chavo, Pierre Bourne"}
+        />
+        <RecommendedAlbums
+          title={"Just A Matter of S..."}
+          artist={"Chavo, Pierre Bourne"}
+        />
       </Stack>
 
       <Stack direction="row" mt="60px" ml="80px" gap="8">
