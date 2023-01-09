@@ -24,13 +24,15 @@ const Sidebar = () => {
             bgColor="purple.600"
             mr="10px"
           />
-          <Text fontSize={["16px"]}>Constructor UI Kit</Text>
+          <Text fontSize={["0px", "0px", "12px", "14px", "16px"]}>
+            Constructor UI Kit
+          </Text>
         </HStack>
       </Box>
       <Box pl="5px" pr="10px" pt="40px">
         <VStack align="left">
           <Text
-            fontSize="12px"
+            fontSize={["0px", "0px", "10px", "12px", "14px"]}
             fontWeight="bold"
             color="gray.700"
             ml="20px"
@@ -50,7 +52,7 @@ const Sidebar = () => {
       <Box pl="5px" pr="10px" pt="45px">
         <VStack align="left">
           <Text
-            fontSize="14px"
+            fontSize={["0px", "0px", "10px", "12px", "14px"]}
             fontWeight="bold"
             color="gray.700"
             ml="20px"
@@ -66,7 +68,7 @@ const Sidebar = () => {
       <Box pl="5px" pr="10px" pt="45px">
         <VStack align="left">
           <Text
-            fontSize="14px"
+            fontSize={["0px", "0px", "10px", "12px", "14px"]}
             fontWeight="bold"
             color="gray.700"
             ml="20px"
@@ -88,9 +90,10 @@ const Sidebar = () => {
           ml="20px"
           mt="10px"
           mb="20px"
-          width="150px"
+          width={["0px", "0px", "0px", "120px", "150px"]}
           bgColor="white"
           borderRadius="25px"
+          fontSize={["0px", "0px", "0px", "13px", "15px"]}
         >
           New Playlist
         </Button>
@@ -98,7 +101,7 @@ const Sidebar = () => {
       <Box pl="5px" pr="10px" pt="45px">
         <VStack align="left">
           <Text
-            fontSize="14px"
+            fontSize={["0px", "0px", "10px", "12px", "14px"]}
             fontWeight="bold"
             color="gray.700"
             ml="20px"

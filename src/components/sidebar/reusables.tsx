@@ -28,14 +28,14 @@ export const Main = ({ title, leftIcon }: Props) => {
           {leftIcon}
         </Box>
         <Text
-          width={["80px", "100px", "130px"]}
-          fontSize={["14px", "16px"]}
+          width={["0px", "0px", "0px", "100px", "130px"]}
+          fontSize={["0px", "0px", "0px", "14px", "16px"]}
           fontWeight="bold"
         >
           {title}
         </Text>
       </Stack>
-      <Stack pl={["20px", "40px"]}>
+      <Stack pl={["0px", "0px", "0px", "10px", "40px"]}>
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
@@ -63,11 +63,15 @@ export const Music = ({ title, leftIcon }: Props) => {
         <Box mr="10px" pt="3px" pb="3px" color="red.500">
           {leftIcon}
         </Box>
-        <Text width="110px" fontWeight="bold">
+        <Text
+          width={["0px", "0px", "0px", "100px", "110px"]}
+          fontSize={["0px", "0px", "0px", "14px", "16px"]}
+          fontWeight="bold"
+        >
           {title}
         </Text>
       </Stack>
-      <Stack pl="60px">
+      <Stack pl={["0px", "0px", "0px", "10px", "60px"]}>
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
@@ -95,11 +99,15 @@ export const Playlists = ({ title, leftIcon }: Props) => {
         <Box mr="10px" pt="3px" pb="3px" color="gray.500">
           {leftIcon}
         </Box>
-        <Text width="130px" fontSize="15px" fontWeight="bold">
+        <Text
+          width={["0px", "0px", "0px", "100px", "130px"]}
+          fontSize={["0px", "0px", "0px", "12px", "15px"]}
+          fontWeight="bold"
+        >
           {title}
         </Text>
       </Stack>
-      <Stack pl="40px">
+      <Stack pl={["0px", "0px", "0px", "10px", "40px"]}>
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
@@ -132,11 +140,16 @@ export const Artists = ({ title, leftIcon }: Props) => {
           borderRadius="25px"
           src={leftIcon}
         />
-        <Text width="110px" fontSize="14px" fontWeight="bold" p="3px">
+        <Text
+          width={["0px", "0px", "0px", "100px", "110px"]}
+          fontSize={["0px", "0px", "0px", "12px", "14px"]}
+          fontWeight="bold"
+          p="3px"
+        >
           {title}
         </Text>
       </Stack>
-      <Stack pl="60px">
+      <Stack pl={["0px", "0px", "0px", "10px", "60px"]}>
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
@@ -148,11 +161,12 @@ export const Artists = ({ title, leftIcon }: Props) => {
 export const TopbarItems = ({ title, leftIcon }: Props) => {
   return (
     <Stack
+      w={["0", "30%", "48%", "62%", "80%", "100%"]}
       direction="row"
       pt="15px"
       pb="15px"
-      pl="20px"
-      p="13px"
+      pl={["15px", "18px", "20px"]}
+      p={["10px", "11px", "13px"]}
       _hover={{
         backgroundColor: "#f1faee",
         p: "13px",
@@ -161,11 +175,20 @@ export const TopbarItems = ({ title, leftIcon }: Props) => {
         fontWeight: "bold",
       }}
     >
-      <Stack direction="row" ml="15px">
-        <Box mr="10px" pt="3px" pb="3px" color="gray.500">
+      <Stack direction="row" ml={["15px", "15px", "5px", "12px", "15px"]}>
+        <Box
+          mr={["0px", "0px", "5px", "7px", "10px"]}
+          pt="3px"
+          pb="3px"
+          color="gray.500"
+        >
           {leftIcon}
         </Box>
-        <Text width={["120px "]} fontSize="14px" fontWeight="bold">
+        <Text
+          width={["0px ", "0px ", "100px ", "100px ", "110px ", "120px "]}
+          fontSize={["8px", "8px", "10px", "12px", "12px", "14px"]}
+          fontWeight="bold"
+        >
           {title}
         </Text>
       </Stack>
