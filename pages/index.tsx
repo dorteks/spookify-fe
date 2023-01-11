@@ -8,8 +8,9 @@ const Home = () => {
     <Box>
       <Grid
         templateColumns={[
-          "200px 1fr",
-          "200px 1fr",
+          "0px 1fr",
+          "0px 1fr",
+          "0px 1fr",
           "200px 1fr",
           "250px 1fr",
           "300px 1fr",

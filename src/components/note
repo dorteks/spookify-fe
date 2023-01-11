@@ -1,0 +1,102 @@
+import { AiTwotoneSetting } from "react-icons/ai";
+import { RiPlayListAddLine } from "react-icons/ri";
+import { BsFillBookmarkFill } from "react-icons/bs";
+import { Box, Stack, Img, Button, Text } from "@chakra-ui/react";
+
+// type Props = {
+//   title: any,
+//   leftIcon: any,
+// };
+
+// export const TopbarItems = ({ title, leftIcon }: Props) => {
+//   return (
+//     <Stack
+//       direction="row"
+//       alignItems="center"
+//       gap="2"
+//       h={12}
+//       _hover={{
+//         backgroundColor: "white",
+//         pl: "15px",
+//         borderRadius: "25px",
+//         fontWeight: "bold",
+//       }}
+//     >
+//       {leftIcon}
+//       <Text fontSize="16px" fontWeight="bold">
+//         {title}
+//       </Text>
+//     </Stack>
+//   );
+// };
+
+const Topbar = () => {
+  return (
+    <Box
+      bgColor="gray.50"
+      maxW={["100%", "100%", "100%", "100%", "100%"]}
+      h="100px"
+      as="section"
+    >
+      <Stack
+        display="flex"
+        direction="row"
+        alignContent="center"
+        alignItems={[
+          "center",
+          "center",
+          "center",
+          "center",
+          "center",
+          "center",
+        ]}
+        justifyContent="space-between"
+        pt="20px"
+      >
+        <Box w={["40px", "40px", "40px", "40px", "40px"]} ml="20px" mr="20px">
+          <Img boxSize="38px" bgColor="gray.500" />
+        </Box>
+        <Box
+          width={["35%", "35%", "35%", "35%", "35%"]}
+          marginInline="auto"
+          marginLeft="inherit"
+        >
+          <Button w="full" fontSize="16px" borderRadius="25px">
+            Search
+          </Button>
+        </Box>
+        <Box w={["40%", "40%", "40%", "40%", "40%"]}>
+          <Stack direction="row">
+            <Box w="33%" ml="20px">
+              <TopbarItems
+                title={"Personal Release"}
+                leftIcon={<BsFillBookmarkFill size="20px" />}
+              />
+            </Box>
+            <Box
+              w={["33%", "33%", "33%", "33%", "33%"]}
+              ml={["20px", "20px", "20px", "20px", "20px"]}
+            >
+              <TopbarItems
+                title={"  Create Playlist"}
+                leftIcon={<RiPlayListAddLine size="20px" />}
+              />
+            </Box>
+            <Box w="33%" ml="20px">
+              <TopbarItems
+                title={" Settings"}
+                leftIcon={<AiTwotoneSetting size="20px" />}
+              />
+            </Box>
+          </Stack>
+        </Box>
+
+        <Box bgColor={"blue"} w="60px" marginInline="auto" mr="20px" ml="20px">
+          <Img boxSize="60px" bgColor="gray.500" />
+        </Box>
+      </Stack>
+    </Box>
+  );
+};
+
+export default Topbar;

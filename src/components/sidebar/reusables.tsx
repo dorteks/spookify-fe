@@ -1,7 +1,6 @@
 import React from "react";
 import { SlArrowRight } from "react-icons/sl";
-import { Avatar, Box, Input, Stack, Text } from "@chakra-ui/react";
-import { SearchIcon } from "@chakra-ui/icons";
+import { Avatar, Box, Stack, Text } from "@chakra-ui/react";
 
 type Props = {
   title: React.ReactNode;
@@ -158,40 +157,50 @@ export const Artists = ({ title, leftIcon }: Props) => {
   );
 };
 
-export const TopbarItems = ({ title, leftIcon }: Props) => {
-  return (
-    <Stack
-      w={["0", "30%", "48%", "62%", "80%", "100%"]}
-      direction="row"
-      pt="15px"
-      pb="15px"
-      pl={["15px", "18px", "20px"]}
-      p={["10px", "11px", "13px"]}
-      _hover={{
-        backgroundColor: "#f1faee",
-        p: "13px",
-        borderRadius: "25px",
-        color: "purple.600",
-        fontWeight: "bold",
-      }}
-    >
-      <Stack direction="row" ml={["15px", "15px", "5px", "12px", "15px"]}>
-        <Box
-          mr={["0px", "0px", "5px", "7px", "10px"]}
-          pt="3px"
-          pb="3px"
-          color="gray.500"
-        >
-          {leftIcon}
-        </Box>
-        <Text
-          width={["0px ", "0px ", "100px ", "100px ", "110px ", "120px "]}
-          fontSize={["8px", "8px", "10px", "12px", "12px", "14px"]}
-          fontWeight="bold"
-        >
-          {title}
-        </Text>
-      </Stack>
-    </Stack>
-  );
-};
+// export const TopbarItems = ({ title, leftIcon }: Props) => {
+//   return (
+//     <Stack
+//       w={["30%", "48%", "62%", "80%", "100%"]}
+//       direction="row"
+//       pt="15px"
+//       pb="15px"
+//       pl={["5px", "1px", "10px", "10px", "10px"]}
+//       _hover={{
+//         backgroundColor: "#f1faee",
+//         p: "13px",
+//         borderRadius: "25px",
+//         color: "purple.600",
+//         fontWeight: "bold",
+//       }}
+//     >
+//       <Stack
+//         direction="row"
+//         ml={["5px", "5px", "5px", "3px", "8px", "10px", "15px"]}
+//       >
+//         <Box
+//           pr={["0px", "0px", "3px", "5px", "7px", "10px"]}
+//           pt="3px"
+//           pb="3px"
+//           color="gray.500"
+//         >
+//           {leftIcon}
+//         </Box>
+//         <Text
+//           width={[
+//             "0px ",
+//             "0px ",
+//             "50px ",
+//             "50px ",
+//             "110px ",
+//             "120px ",
+//             "120px ",
+//           ]}
+//           fontSize={["8px", "8px", "10px", "13px", "14px", "14px"]}
+//           fontWeight="bold"
+//         >
+//           {title}
+//         </Text>
+//       </Stack>
+//     </Stack>
+//   );
+// };
