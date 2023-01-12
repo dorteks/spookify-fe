@@ -11,8 +11,8 @@ const Home = () => {
           "0px 1fr",
           "0px 1fr",
           "0px 1fr",
-          "200px 1fr",
-          "250px 1fr",
+          "260px 1fr",
+          "260px 1fr",
           "300px 1fr",
         ]}
       >

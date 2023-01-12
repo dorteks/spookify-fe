@@ -1,64 +1,25 @@
 import {
-  BsFillBookmarkFill,
-  BsSuitHeartFill,
   BsCalendarEvent,
+  BsSuitHeartFill,
+  BsFillBookmarkFill,
 } from "react-icons/bs";
-import {
-  Box,
-  Button,
-  HStack,
-  IconButton,
-  Img,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
-import React from "react";
 import { IoMdHome } from "react-icons/io";
-import { GrHistory } from "react-icons/gr";
 import { FaCompass } from "react-icons/fa";
+import { GrHistory } from "react-icons/gr";
 import { BiNetworkChart } from "react-icons/bi";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { RiPlayListFill } from "react-icons/ri";
 import { CgEditBlackPoint } from "react-icons/cg";
-import { AiTwotoneSetting } from "react-icons/ai";
-import { RiPlayListAddLine, RiPlayListFill } from "react-icons/ri";
-import { Artists, Main, Music, Playlists } from "./sidebar/reusables";
+import { VStack, Button, Box, Text } from "@chakra-ui/react";
+import { Music, Playlists, Artists, Main } from "./reusables";
 
-const Sidebar = () => {
+export const SidebarMenu = () => {
   return (
-    <Box
-      height="auto"
-      // bgColor="#f1faee"
-      bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
-    >
-      <Stack
-        flexDirection={["row", "row", "row", "column", "column", "column"]}
-        pl={["10px", "20px", "20px", "20px", "20px", "20px"]}
-        pr="10px"
-        pt="25px"
-      >
-        <HStack>
-          <Img
-            display={["flex", "flex", "flex", "flex", "flex", "flex"]}
-            boxSize="30px"
-            borderRadius="full"
-            bgColor="purple.600"
-            mr="10px"
-          />
-          <Text
-            fontSize={["10px", "10px", "10px", "14px", "14px", "16px"]}
-            display={["none", "none", "none", "flex", "flex", "flex"]}
-          >
-            Constructor UI Kit
-          </Text>
-        </HStack>
-      </Stack>
-
-      <Box display={["none", "none", "none", "flex", "flex", "flex"]}>
+    <VStack>
+      <Box flexDirection="column">
         <Box pl="5px" pr="10px" pt="40px">
           <VStack align="left">
             <Text
-              fontSize={["0", "0", "0", "10px", "12px", "14px"]}
+              fontSize={"14px"}
               fontWeight="bold"
               color="gray.700"
               ml="20px"
@@ -78,7 +39,7 @@ const Sidebar = () => {
         <Box pl="5px" pr="10px" pt="45px">
           <VStack align="left">
             <Text
-              fontSize={["0px", "0px", "10px", "12px", "14px"]}
+              fontSize={"14px"}
               fontWeight="bold"
               color="gray.700"
               ml="20px"
@@ -94,7 +55,7 @@ const Sidebar = () => {
         <Box pl="5px" pr="10px" pt="45px">
           <VStack align="left">
             <Text
-              fontSize={["0px", "0px", "10px", "12px", "14px"]}
+              fontSize={"14px"}
               fontWeight="bold"
               color="gray.700"
               ml="20px"
@@ -119,10 +80,10 @@ const Sidebar = () => {
             ml="20px"
             mt="10px"
             mb="20px"
-            width={["0px", "0px", "0px", "120px", "150px"]}
+            width={["120px", "120px", "120px", "120px", "120px", "150px"]}
             bgColor="white"
             borderRadius="25px"
-            fontSize={["0px", "0px", "0px", "13px", "15px"]}
+            fontSize={"14px"}
           >
             New Playlist
           </Button>
@@ -130,7 +91,7 @@ const Sidebar = () => {
         <Box pl="5px" pr="10px" pt="45px">
           <VStack align="left">
             <Text
-              fontSize={["0px", "0px", "10px", "12px", "14px"]}
+              fontSize={"14px"}
               fontWeight="bold"
               color="gray.700"
               ml="20px"
@@ -152,8 +113,6 @@ const Sidebar = () => {
           </VStack>
         </Box>
       </Box>
-    </Box>
+    </VStack>
   );
 };
-
-export default Sidebar;

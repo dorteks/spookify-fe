@@ -3,93 +3,152 @@ import {
   BsSuitHeartFill,
   BsCalendarEvent,
 } from "react-icons/bs";
-import {
-  Box,
-  Button,
-  HStack,
-  IconButton,
-  Img,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
 import React from "react";
 import { IoMdHome } from "react-icons/io";
 import { GrHistory } from "react-icons/gr";
 import { FaCompass } from "react-icons/fa";
+import { RiPlayListFill } from "react-icons/ri";
 import { BiNetworkChart } from "react-icons/bi";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { CgEditBlackPoint } from "react-icons/cg";
-import { AiTwotoneSetting } from "react-icons/ai";
-import { RiPlayListAddLine, RiPlayListFill } from "react-icons/ri";
+import { Box, Button, HStack, Img, Text, VStack } from "@chakra-ui/react";
 import { Artists, Main, Music, Playlists } from "./sidebar/reusables";
 
 const Sidebar = () => {
   return (
-    <Box
-      height="auto"
-      bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
-      // bgColor="#f1faee"
-    >
-      <Box display={["flex", "flex", "none", "none", "none", "none"]}>
-        <Img boxSize="40px" bgColor="gray.500" />
-      </Box>
-
-      <Stack
-        flexDirection={["row", "row", "row", "column", "column", "column"]}
-        pl={["10px", "20px", "20px", "20px", "20px", "20px"]}
+    <Box height="auto" bgColor="#f1faee">
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl={["20px"]}
         pr="10px"
         pt="25px"
       >
-        <>
-          <Stack
-            direction="column"
-            display={["none", "none", "none", "flex", "flex", "flex"]}
+        <HStack>
+          <Img
+            boxSize="30px"
+            borderRadius="full"
+            bgColor="purple.600"
+            mr="5px"
+          />
+          <Text fontSize={["0px", "16px", "16px", "16px", "16px", "16px"]}>
+            Constructor UI Kit
+          </Text>
+        </HStack>
+      </Box>
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl="5px"
+        pr="10px"
+        pt="40px"
+      >
+        <VStack align="left">
+          <Text
+            fontSize={["0px", "0px", "14px", "14px", "14px", "14px"]}
+            fontWeight="bold"
+            color="gray.700"
+            ml="20px"
+            mt="10px"
+            mb="20px"
           >
-            <Stack direction="row">
-              <Img boxSize="25px" />
-              <Text>Constructor UI Kit</Text>
-            </Stack>
-
-            <Box flexDirection="column">
-              <Box pl="5px" pr="10px" pt="40px">
-                main Categories
-              </Box>
-              <Box pl="5px" pr="10px" pt="45px">
-                Your music
-              </Box>
-              <Box pl="5px" pr="10px" pt="45px">
-                your playlist
-              </Box>
-              <Box pl="5px" pr="10px" pt="45px">
-                New playlist button
-              </Box>
-              <Box pl="5px" pr="10px" pt="45px">
-                Your fav artist
-              </Box>
-            </Box>
-          </Stack>
-        </>
-      </Stack>
+            MAIN CATEGORIES
+          </Text>
+          <Main title={"Home"} leftIcon={<IoMdHome />} />
+          <Main title={"Explore"} leftIcon={<FaCompass />} />
+          <Main title={"New Releases"} leftIcon={<BsCalendarEvent />} />
+          <Main title={"Top Charts"} leftIcon={<BiNetworkChart />} />
+          <Main title={"Radio"} leftIcon={<CgEditBlackPoint />} />
+          <Main title={"News Music"} leftIcon={<BsFillBookmarkFill />} />
+        </VStack>
+      </Box>
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl="5px"
+        pr="10px"
+        pt="45px"
+      >
+        <VStack align="left">
+          <Text
+            fontSize={["14px", "14px", "14px", "14px", "14px", "14px"]}
+            fontWeight="bold"
+            color="gray.700"
+            ml="20px"
+            mt="10px"
+            mb="20px"
+          >
+            YOUR MUSIC
+          </Text>
+          <Music title={"Favourites"} leftIcon={<BsSuitHeartFill />} />
+          <Main title={"History"} leftIcon={<GrHistory />} />
+        </VStack>
+      </Box>
+      <Box pl="5px" pr="10px" pt="45px">
+        <VStack align="left">
+          <Text
+            fontSize={["14px"]}
+            fontWeight="bold"
+            color="gray.700"
+            ml="20px"
+            mt="10px"
+            mb="20px"
+          >
+            YOUR PLAYLISTS
+          </Text>
+          <Playlists title={"My Rock Collect"} leftIcon={<RiPlayListFill />} />
+          <Playlists title={"Best Music"} leftIcon={<RiPlayListFill />} />
+          <Playlists title={"Hits of 90s"} leftIcon={<RiPlayListFill />} />
+          <Playlists title={"Classic Music"} leftIcon={<RiPlayListFill />} />
+          <Playlists title={"New Pop Music"} leftIcon={<RiPlayListFill />} />
+          <Playlists title={"Slipknot"} leftIcon={<RiPlayListFill />} />
+        </VStack>
+      </Box>
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl="5px"
+        pr="10px"
+        pt="45px"
+      >
+        <Button
+          ml="20px"
+          mt="10px"
+          mb="20px"
+          width={["0px", "0px", "0px", "120px", "150px"]}
+          bgColor="white"
+          borderRadius="25px"
+          fontSize={["15px"]}
+        >
+          New Playlist
+        </Button>
+      </Box>
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl="5px"
+        pr="10px"
+        pt="45px"
+      >
+        <VStack align="left">
+          <Text
+            fontSize={["14px"]}
+            fontWeight="bold"
+            color="gray.700"
+            ml="20px"
+            mt="10px"
+            mb="20px"
+          >
+            YOUR FAVOURITE ARTISTS
+          </Text>
+          <Artists title={"Billie Eilish"} leftIcon={""} />
+          <Artists title={"BTS"} leftIcon={""} />
+          <Artists title={"Olivia Rodrigo"} leftIcon={""} />
+          <Artists title={"The Weekemd"} leftIcon={""} />
+          <Artists title={"Doja Cat "} leftIcon={""} />
+          <Artists title={"Nas "} leftIcon={""} />
+          <Artists title={"Dua Lipa "} leftIcon={""} />
+          <Artists title={"Ed Sheeran "} leftIcon={""} />
+          <Artists title={"Luke Combs "} leftIcon={""} />
+          <Artists title={"Billie "} leftIcon={""} />
+        </VStack>
+      </Box>
     </Box>
   );
 };
 
 export default Sidebar;
-
-{
-  /* small screen menu */
-}
-{
-  /* <Stack
-          display={["flex", "flex", "flex", "none", "none", "none"]}
-          direction="row"
-        >
-          <Text bgColor="red"> ABC </Text>
-          <Text bgColor="red"> ABC </Text>
-          <Text bgColor="red"> ABC </Text>
-          <Text bgColor="red"> ABC </Text>
-          <Text bgColor="red"> ABC </Text>
-          <Text bgColor="red"> ABC </Text>
-        </Stack> */
-}

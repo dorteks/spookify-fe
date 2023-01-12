@@ -1,7 +1,11 @@
+import { useState } from "react";
+import { GrClose } from "react-icons/gr";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { AiTwotoneSetting } from "react-icons/ai";
 import { RiPlayListAddLine } from "react-icons/ri";
 import { BsFillBookmarkFill } from "react-icons/bs";
-import { Box, Stack, Img, Button, Text } from "@chakra-ui/react";
+import { SidebarMenu } from "./sidebar/sidebarmenu";
+import { Box, Stack, Img, Text, IconButton, Flex } from "@chakra-ui/react";
 
 type Props = {
   title: any;
@@ -38,6 +42,8 @@ export const TopbarItems = ({ title, leftIcon }: Props) => {
 };
 
 const Topbar = () => {
+  const [display, changeDisplay] = useState("none");
+
   return (
     <Box
       // bgColor="#f1faee"
@@ -70,29 +76,56 @@ const Topbar = () => {
           <Img boxSize="38px" bgColor="gray.500" />
         </Box>
 
-        <Box
-          // display={["none", "flex", "flex", "flex", "flex", "flex"]}
-          width={["39%", "48%", "54%", "36%", "36%", "38%"]}
-        >
-          <Stack
-            direction="row"
-            justifyContent={[
-              "center",
-              "center",
-              "center",
-              "center",
-              "center",
-              "center",
-            ]}
-          >
+        <Box width={["39%", "48%", "54%", "29%", "36%", "38%"]}>
+          <Stack direction="row" justifyContent="center">
             {/* topbar component for mobile and tablet */}
             <Box
               display={["flex", "flex", "flex", "none", "none", "none"]}
               flexDirection="row"
             >
+              {/*open menu button starts here */}
               <Box w="80px" ml="10px">
-                <Img boxSize="45px" bgColor="gray.500" />
+                <IconButton
+                  aria-label="Open Menu"
+                  boxSize="45px"
+                  bgColor="gray.500"
+                  icon={<GiHamburgerMenu />}
+                  display={["flex", "flex", "flex", "none", "none"]}
+                  onClick={() => changeDisplay("flex")}
+                />
               </Box>
+              {/*open menu button stops here */}
+
+              {/*close menu button starts here */}
+              <Stack
+                w="45vw"
+                bgColor="gray.50"
+                zIndex={20}
+                h="100vh"
+                pos="fixed"
+                top="0"
+                left="0"
+                overflowY="auto"
+                flexDirection="column"
+                display={display}
+              >
+                <Flex justify="flex-end">
+                  <Box>
+                    <IconButton
+                      aria-label="Close Menu"
+                      mt={3}
+                      mr={5}
+                      icon={<GrClose />}
+                      onClick={() => changeDisplay("none")}
+                    />
+                  </Box>
+                </Flex>
+
+                <SidebarMenu />
+              </Stack>
+              {/*close menu button stops here */}
+
+              {/* constructor ui logo */}
               <Box w="80px">
                 <Img boxSize="45px" bgColor="gray.500" />
               </Box>
@@ -131,7 +164,6 @@ const Topbar = () => {
                 "space-evenly",
                 "space-evenly",
               ]}
-              // pl={["-12", "0", "0", "0", "0", "0"]}
             >
               <TopbarItems
                 title={"Personal Release"}
