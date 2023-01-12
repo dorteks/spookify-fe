@@ -1,7 +1,7 @@
-import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Body from "../src/components/body";
-import Sidebar from "../src/components/sidebar";
 import Topbar from "../src/components/topbar";
+import Sidebar from "../src/components/sidebar";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 
 const Home = () => {
   return (

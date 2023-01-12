@@ -41,81 +41,67 @@ const Topbar = () => {
   return (
     <Box
       // bgColor="#f1faee"
-
       bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
       h={"100px"}
       as="section"
     >
       <Stack
-        display={"flex"}
+        display="flex"
         direction="row"
         alignContent="center"
-        alignItems={["center"]}
+        alignItems="center"
         justifyContent={[
           "space-between",
           "space-between",
           "space-between",
-          "space-between",
-          "space-between",
+          "space-evenly",
+          "space-around",
           "space-between",
         ]}
         pt="20px"
       >
-        <Box
-          w={["40px"]}
-          display={["none", "none", "none", "flex", "flex", "flex"]}
-          ml="20px"
-          mr="20px"
+        <Stack
+          direction="row"
+          width={["42%", "42%", "42%", "42%", "39%", "41%"]}
+          justifyContent={[
+            "space-between",
+            "space-between",
+            "space-between",
+            "space-between",
+            "space-between",
+            "space-between",
+          ]}
         >
-          <Img boxSize="38px" bgColor="gray.500" />
-        </Box>
-        <Box
-          width={["35%"]}
-          marginInlineEnd={["auto", "auto"]}
-          marginLeft="inherit"
+          <Box w="8%" ml="15px" mr="15px">
+            <Img boxSize="38px" bgColor="gray.500" />
+          </Box>
+          <Box width={["39%", "39%", "39%", "39%", "36%", "38%"]}>
+            <Button w="full">Search</Button>
+          </Box>
+        </Stack>
+        <Stack
+          direction="row"
+          w={["44%", "44%", "44%", "44%", "46%", "40%"]}
+          justifyContent={[
+            "space-between",
+            "space-between",
+            "space-between",
+            "left",
+            "left",
+            "space-between",
+          ]}
         >
-          <Button
-            w="full"
-            fontSize="16px"
-            borderRadius="25px"
-            display={["none", "none", "none", "flex", "flex", "flex"]}
-          >
-            Search
-          </Button>
-        </Box>
-        <Box w={["40%"]}>
-          <Stack direction="row">
-            <Box w="33%" ml="20px">
-              <TopbarItems
-                title={"Personal Release"}
-                leftIcon={<BsFillBookmarkFill size="20px" />}
-              />
-            </Box>
-            <Box w={["33%"]} ml={["20px"]}>
-              <TopbarItems
-                title={"  Create Playlist"}
-                leftIcon={<RiPlayListAddLine size="20px" />}
-              />
-            </Box>
-            <Box w="33%" ml="20px">
-              <TopbarItems
-                title={" Settings"}
-                leftIcon={<AiTwotoneSetting size="20px" />}
-              />
-            </Box>
-          </Stack>
-        </Box>
-
-        <Box
-          bgColor={"blue"}
-          w="60px"
-          // marginBlock="auto"
-          display={["none", "none", "none", "flex", "flex", "flex"]}
-          marginInlineEnd={["auto", "auto"]}
-          mr={["15px", "20px"]}
-        >
-          <Img boxSize="60px" bgColor="gray.500" />
-        </Box>
+          <Box w={["44%", "44%", "44%", "44%", "46%", "40%"]} bgColor="white">
+            <Stack direction="row" ml="50px">
+              <Box>1</Box>
+              <Box>2</Box>
+              <Box>3</Box>
+            </Stack>
+          </Box>
+          <Box w={["9%", "9%", "9%", "9%", "6%", "9%"]}>
+            <Img boxSize="60px" bgColor="gray.500" />
+          </Box>
+        </Stack>
       </Stack>
     </Box>
   );
