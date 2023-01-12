@@ -20,6 +20,7 @@ export const TopbarItems = ({ title, leftIcon }: Props) => {
       pr="10px"
       h={12}
       _hover={{
+        w: "180px",
         backgroundColor: "white",
         pl: "15px",
         borderRadius: "25px",

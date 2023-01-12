@@ -11,7 +11,7 @@ type Props = {
 export const TopAlbumsCard = ({ number, title, artist, time }: Props) => {
   return (
     <Card
-      w={["50px", "50px", "50px", "390px", "480px", "650px"]}
+      w={["280px", "550px", "370px", "460px", "555px", "630px"]}
       h="80px"
       justify="center"
     >
