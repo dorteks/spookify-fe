@@ -18,12 +18,14 @@ import { TopSinglesCard } from "./body/topsingles";
 const Body = () => {
   return (
     <Box width="full" h="auto" bgColor="gray.50">
+      {/* bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]} */}
+
       <Stack
         direction="row"
-        pt="15px"
+        pt="40px"
         pb="15px"
         pl="80px"
-        gap={["0", "0", "0", "3", "6", "8"]}
+        gap={["0", "5", "8", "8", "8", "8"]}
       >
         <NewAlbum
           title="NEW ALBUM"
@@ -35,19 +37,6 @@ const Body = () => {
           newAlbumTitle="NEW ALBUM"
           newAlbumArtist=""
         />
-
-        {/* <Card
-          w={["0px", "0px", "0px", "420px", "510px", "700px"]}
-          h="360px"
-          bgColor="gray.500"
-        >
-          <Text fontSize="5xl" pt="40px" pl="350px" pr="50px">
-            BILLIE EILISH
-          </Text>
-          <Text pt="80px" pl="80px">
-            NEW ALBUM
-          </Text>
-        </Card> */}
       </Stack>
 
       <Stack
@@ -61,7 +50,7 @@ const Body = () => {
         <HStack
           align="center"
           justifyContent="space-between"
-          w={["0", "30%", "48%", "62%", "80%", "96%"]}
+          w={["0", "93%", "90%", "81%", "90%", "96%"]}
           h="80px"
         >
           <Stack direction="row" ml="10px">
@@ -69,7 +58,7 @@ const Body = () => {
               <AiFillLike size="25px" />
             </Box>
             <Text
-              fontSize={["2px", "2px", "2px", "14px", "14px", "16px"]}
+              fontSize={["2px", "14px", "14px", "14px", "14px", "16px"]}
               p="5px"
               fontWeight="bold"
               color="gray.700"
@@ -127,14 +116,14 @@ const Body = () => {
       </Stack>
 
       <Stack
-        direction={["column", "column", "column", "row", "row", "row"]}
+        direction={["column", "column", "row", "row", "row", "row"]}
         mt="60px"
         ml="80px"
         gap={["2", "2", "2", "1", "4", "8"]}
       >
         <Card
           h="auto"
-          width={["200px", "200px", "200px", "420px", "515px", "700px"]}
+          width={["320px", "600px", "410px", "510px", "600px", "673px"]}
           bgColor="gray.50"
         >
           <CardHeader mt="20px">
@@ -196,7 +185,7 @@ const Body = () => {
 
         <Card
           h="auto"
-          width={["200px", "200px", "200px", "420px", "515px", "700px"]}
+          width={["320px", "600px", "410px", "510px", "600px", "673px"]}
           bgColor="gray.50"
         >
           <CardHeader mt="20px">
