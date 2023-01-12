@@ -1,12 +1,13 @@
 import React from "react";
 import { SlArrowRight } from "react-icons/sl";
-import { Avatar, Box, Input, Stack, Text } from "@chakra-ui/react";
-import { SearchIcon } from "@chakra-ui/icons";
+import { Avatar, Box, Stack, Text } from "@chakra-ui/react";
 
 type Props = {
   title: React.ReactNode;
   leftIcon: any;
 };
+
+// bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
 
 export const Main = ({ title, leftIcon }: Props) => {
   return (
@@ -28,8 +29,8 @@ export const Main = ({ title, leftIcon }: Props) => {
           {leftIcon}
         </Box>
         <Text
-          width={["0px", "0px", "0px", "100px", "130px"]}
-          fontSize={["0px", "0px", "0px", "14px", "16px"]}
+          width={["100px", "100px", "130px", "130px", "130px", "130px"]}
+          fontSize={["14px", "14px", "14px", "15px", "16px", "16px"]}
           fontWeight="bold"
         >
           {title}
@@ -64,14 +65,14 @@ export const Music = ({ title, leftIcon }: Props) => {
           {leftIcon}
         </Box>
         <Text
-          width={["0px", "0px", "0px", "100px", "110px"]}
-          fontSize={["0px", "0px", "0px", "14px", "16px"]}
+          width={["100px", "100px", "110px", "110px", "110px"]}
+          fontSize={["14px", "14px", "16px", "15px", "16px"]}
           fontWeight="bold"
         >
           {title}
         </Text>
       </Stack>
-      <Stack pl={["0px", "0px", "0px", "10px", "60px"]}>
+      <Stack pl={["", "", "30px", "30px", "10px", "60px"]}>
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
@@ -100,8 +101,8 @@ export const Playlists = ({ title, leftIcon }: Props) => {
           {leftIcon}
         </Box>
         <Text
-          width={["0px", "0px", "0px", "100px", "130px"]}
-          fontSize={["0px", "0px", "0px", "12px", "15px"]}
+          width={["100px", "100px", "100px", "130px", "130px", "130px"]}
+          fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
           fontWeight="bold"
         >
           {title}
@@ -141,8 +142,8 @@ export const Artists = ({ title, leftIcon }: Props) => {
           src={leftIcon}
         />
         <Text
-          width={["0px", "0px", "0px", "100px", "110px"]}
-          fontSize={["0px", "0px", "0px", "12px", "14px"]}
+          width={["100px", "100px", "100px", "110px", "100px", "110px"]}
+          fontSize={["12px", "12px", "12px", "14px", "12px", "14px"]}
           fontWeight="bold"
           p="3px"
         >
@@ -153,44 +154,6 @@ export const Artists = ({ title, leftIcon }: Props) => {
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
-      </Stack>
-    </Stack>
-  );
-};
-
-export const TopbarItems = ({ title, leftIcon }: Props) => {
-  return (
-    <Stack
-      w={["0", "30%", "48%", "62%", "80%", "100%"]}
-      direction="row"
-      pt="15px"
-      pb="15px"
-      pl={["15px", "18px", "20px"]}
-      p={["10px", "11px", "13px"]}
-      _hover={{
-        backgroundColor: "#f1faee",
-        p: "13px",
-        borderRadius: "25px",
-        color: "purple.600",
-        fontWeight: "bold",
-      }}
-    >
-      <Stack direction="row" ml={["15px", "15px", "5px", "12px", "15px"]}>
-        <Box
-          mr={["0px", "0px", "5px", "7px", "10px"]}
-          pt="3px"
-          pb="3px"
-          color="gray.500"
-        >
-          {leftIcon}
-        </Box>
-        <Text
-          width={["0px ", "0px ", "100px ", "100px ", "110px ", "120px "]}
-          fontSize={["8px", "8px", "10px", "12px", "12px", "14px"]}
-          fontWeight="bold"
-        >
-          {title}
-        </Text>
       </Stack>
     </Stack>
   );

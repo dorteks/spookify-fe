@@ -16,23 +16,33 @@ import { Artists, Main, Music, Playlists } from "./sidebar/reusables";
 const Sidebar = () => {
   return (
     <Box height="auto" bgColor="#f1faee">
-      <Box pl={["20px"]} pr="10px" pt="25px">
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl={["20px"]}
+        pr="10px"
+        pt="25px"
+      >
         <HStack>
           <Img
             boxSize="30px"
             borderRadius="full"
             bgColor="purple.600"
-            mr="10px"
+            mr="5px"
           />
-          <Text fontSize={["0px", "0px", "12px", "14px", "16px"]}>
+          <Text fontSize={["0px", "16px", "16px", "16px", "16px", "16px"]}>
             Constructor UI Kit
           </Text>
         </HStack>
       </Box>
-      <Box pl="5px" pr="10px" pt="40px">
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl="5px"
+        pr="10px"
+        pt="40px"
+      >
         <VStack align="left">
           <Text
-            fontSize={["0px", "0px", "10px", "12px", "14px"]}
+            fontSize={["0px", "0px", "14px", "14px", "14px", "14px"]}
             fontWeight="bold"
             color="gray.700"
             ml="20px"
@@ -49,10 +59,15 @@ const Sidebar = () => {
           <Main title={"News Music"} leftIcon={<BsFillBookmarkFill />} />
         </VStack>
       </Box>
-      <Box pl="5px" pr="10px" pt="45px">
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl="5px"
+        pr="10px"
+        pt="45px"
+      >
         <VStack align="left">
           <Text
-            fontSize={["0px", "0px", "10px", "12px", "14px"]}
+            fontSize={["14px", "14px", "14px", "14px", "14px", "14px"]}
             fontWeight="bold"
             color="gray.700"
             ml="20px"
@@ -68,7 +83,7 @@ const Sidebar = () => {
       <Box pl="5px" pr="10px" pt="45px">
         <VStack align="left">
           <Text
-            fontSize={["0px", "0px", "10px", "12px", "14px"]}
+            fontSize={["14px"]}
             fontWeight="bold"
             color="gray.700"
             ml="20px"
@@ -85,7 +100,12 @@ const Sidebar = () => {
           <Playlists title={"Slipknot"} leftIcon={<RiPlayListFill />} />
         </VStack>
       </Box>
-      <Box pl="5px" pr="10px" pt="45px">
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl="5px"
+        pr="10px"
+        pt="45px"
+      >
         <Button
           ml="20px"
           mt="10px"
@@ -93,15 +113,20 @@ const Sidebar = () => {
           width={["0px", "0px", "0px", "120px", "150px"]}
           bgColor="white"
           borderRadius="25px"
-          fontSize={["0px", "0px", "0px", "13px", "15px"]}
+          fontSize={["15px"]}
         >
           New Playlist
         </Button>
       </Box>
-      <Box pl="5px" pr="10px" pt="45px">
+      <Box
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        pl="5px"
+        pr="10px"
+        pt="45px"
+      >
         <VStack align="left">
           <Text
-            fontSize={["0px", "0px", "10px", "12px", "14px"]}
+            fontSize={["14px"]}
             fontWeight="bold"
             color="gray.700"
             ml="20px"

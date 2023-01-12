@@ -1,17 +1,18 @@
-import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Body from "../src/components/body";
-import Sidebar from "../src/components/sidebar";
 import Topbar from "../src/components/topbar";
+import Sidebar from "../src/components/sidebar";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <Box>
       <Grid
         templateColumns={[
-          "200px 1fr",
-          "200px 1fr",
-          "200px 1fr",
-          "250px 1fr",
+          "0px 1fr",
+          "0px 1fr",
+          "0px 1fr",
+          "260px 1fr",
+          "260px 1fr",
           "300px 1fr",
         ]}
       >

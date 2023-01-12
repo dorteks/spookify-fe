@@ -16,6 +16,15 @@ const customThemeConfig: ThemeOverride = {
   colors: {},
 };
 
-const theme = extendTheme({ ...config, ...customThemeConfig });
+const breakpoints = {
+  em: "426px",
+  sm: "769px",
+  md: "1025px",
+  lg: "1441px",
+  xl: "1730px",
+  "2xl": "1940px",
+};
+
+const theme = extendTheme({ ...config, ...customThemeConfig, breakpoints });
 
 export default theme;

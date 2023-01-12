@@ -60,8 +60,8 @@ const Body = () => {
       >
         <HStack
           align="center"
-          justify="space-between"
-          w={["0", "30%", "40%", "60%", "73%", "95%"]}
+          justifyContent="space-between"
+          w={["0", "30%", "48%", "62%", "80%", "96%"]}
           h="80px"
         >
           <Stack direction="row" ml="10px">
