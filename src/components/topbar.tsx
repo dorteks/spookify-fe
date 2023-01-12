@@ -13,7 +13,7 @@ export const TopbarItems = ({ title, leftIcon }: Props) => {
     <Stack
       direction="row"
       alignItems="center"
-      gap="2"
+      pr="10px"
       h={12}
       _hover={{
         backgroundColor: "white",
@@ -22,14 +22,14 @@ export const TopbarItems = ({ title, leftIcon }: Props) => {
         fontWeight: "bold",
       }}
     >
-      <Box display={["none", "none", "none", "flex", "flex", "flex"]}>
+      <Box display={["flex", "flex", "flex", "flex", "flex", "flex"]}>
         {leftIcon}
       </Box>
 
       <Text
-        fontSize="16px"
+        fontSize={["16px", "16px", "10px", "15px", "16px"]}
         fontWeight="bold"
-        display={["none", "none", "none", "flex", "flex", "flex"]}
+        display={["none", "none", "flex", "flex", "flex", "flex"]}
       >
         {title}
       </Text>
@@ -54,54 +54,68 @@ const Topbar = () => {
           "space-between",
           "space-between",
           "space-between",
-          "space-evenly",
-          "space-around",
+          "left",
+          "space-between",
           "space-between",
         ]}
         pt="20px"
       >
-        <Stack
-          direction="row"
-          width={["42%", "42%", "42%", "42%", "39%", "41%"]}
-          justifyContent={[
-            "space-between",
-            "space-between",
-            "space-between",
-            "space-between",
-            "space-between",
-            "space-between",
-          ]}
+        <Box
+          w={["3%", "5%", "4%", "3%", "3%", "3%"]}
+          display={["none", "none", "none", "flex", "flex", "flex"]}
+          ml="15px"
+          mr="15px"
         >
-          <Box w="8%" ml="15px" mr="15px">
-            <Img boxSize="38px" bgColor="gray.500" />
-          </Box>
-          <Box width={["39%", "39%", "39%", "39%", "36%", "38%"]}>
-            <Button w="full">Search</Button>
-          </Box>
-        </Stack>
-        <Stack
-          direction="row"
-          w={["44%", "44%", "44%", "44%", "46%", "40%"]}
-          justifyContent={[
-            "space-between",
-            "space-between",
-            "space-between",
-            "left",
-            "left",
-            "space-between",
-          ]}
+          <Img boxSize="38px" bgColor="gray.500" />
+        </Box>
+        <Box
+          // display={["none", "flex", "flex", "flex", "flex", "flex"]}
+          width={["39%", "39%", "39%", "36%", "36%", "38%"]}
         >
-          <Box w={["44%", "44%", "44%", "44%", "46%", "40%"]} bgColor="white">
-            <Stack direction="row" ml="50px">
-              <Box>1</Box>
-              <Box>2</Box>
-              <Box>3</Box>
-            </Stack>
-          </Box>
-          <Box w={["9%", "9%", "9%", "9%", "6%", "9%"]}>
-            <Img boxSize="60px" bgColor="gray.500" />
-          </Box>
-        </Stack>
+          <Stack direction="row">
+            <Box
+              display={["flex", "flex", "flex", "none", "none", "none"]}
+              flexDirection="row"
+            >
+              <Box>
+                <Img boxSize="40px" bgColor="gray.500" />
+              </Box>
+              <Box>
+                <Img boxSize="40px" bgColor="gray.500" />
+              </Box>
+              <Box display={["none", "flex", "flex", "none", "none", "none"]}>
+                Constructor Kit
+              </Box>
+            </Box>
+
+            <Button
+              display={["none", "flex", "flex", "flex", "flex", "flex"]}
+              w="full"
+            >
+              Search
+            </Button>
+          </Stack>
+        </Box>
+
+        <Box w={["44%", "44%", "44%", "42%", "46%", "40%"]}>
+          <Stack direction="row" ml="50px">
+            <TopbarItems
+              title={"Personal Release"}
+              leftIcon={<BsFillBookmarkFill size="20px" />}
+            />
+            <TopbarItems
+              title={"  Create Playlist"}
+              leftIcon={<RiPlayListAddLine size="20px" />}
+            />
+            <TopbarItems
+              title={" Settings"}
+              leftIcon={<AiTwotoneSetting size="20px" />}
+            />
+          </Stack>
+        </Box>
+        <Box w={["9%", "15%", "9%", "6%", "6%", "9%"]}>
+          <Img boxSize="60px" bgColor="gray.500" />
+        </Box>
       </Stack>
     </Box>
   );

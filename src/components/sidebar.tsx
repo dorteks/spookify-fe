@@ -31,6 +31,10 @@ const Sidebar = () => {
       bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
       // bgColor="#f1faee"
     >
+      <Box display={["flex", "flex", "none", "none", "none", "none"]}>
+        <Img boxSize="40px" bgColor="gray.500" />
+      </Box>
+
       <Stack
         flexDirection={["row", "row", "row", "column", "column", "column"]}
         pl={["10px", "20px", "20px", "20px", "20px", "20px"]}
