@@ -24,7 +24,7 @@ import {
 const Body = () => {
   return (
     <Box
-      width={["52%", "44%", "53%", "50%", "65%", "74%"]}
+      width={["52%", "40%", "49%", "50%", "65%", "74%"]}
       h="auto"
       bgColor="gray.50"
     >
