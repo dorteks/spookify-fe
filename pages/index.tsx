@@ -2,6 +2,7 @@ import Body from "../src/components/body";
 import Topbar from "../src/components/topbar";
 import Sidebar from "../src/components/sidebar";
 import { Box, Grid, GridItem } from "@chakra-ui/react";
+import { SwipeLeft } from "../src/components/swiper";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <GridItem>
           <Topbar />
           <Body />
+          {/* <SwipeLeft /> */}
         </GridItem>
       </Grid>
     </Box>

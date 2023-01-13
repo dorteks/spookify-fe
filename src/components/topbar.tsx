@@ -4,15 +4,17 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiTwotoneSetting } from "react-icons/ai";
 import { RiPlayListAddLine } from "react-icons/ri";
 import { BsFillBookmarkFill } from "react-icons/bs";
+import { RxAvatar } from "react-icons/rx";
+
 import { SidebarMenu } from "./sidebar/sidebarmenu";
 import { Box, Stack, Img, Text, IconButton, Flex } from "@chakra-ui/react";
 
-type Props = {
+type TopbarItemsProps = {
   title: any;
   leftIcon: any;
 };
 
-export const TopbarItems = ({ title, leftIcon }: Props) => {
+export const TopbarItems = ({ title, leftIcon }: TopbarItemsProps) => {
   return (
     <Stack
       direction="row"
@@ -25,6 +27,7 @@ export const TopbarItems = ({ title, leftIcon }: Props) => {
         pl: "15px",
         borderRadius: "25px",
         fontWeight: "bold",
+        alignItems: "center",
       }}
     >
       <Box display={["flex", "flex", "flex", "flex", "flex", "flex"]}>
@@ -39,6 +42,26 @@ export const TopbarItems = ({ title, leftIcon }: Props) => {
         {title}
       </Text>
     </Stack>
+  );
+};
+
+type TopbarItem2Props = {
+  icon: any;
+};
+
+export const TopbarItems2 = ({ icon }: TopbarItem2Props) => {
+  return (
+    <Box
+      boxSize="60px"
+      borderRadius="30px"
+      p="10px"
+      ml={["-9", "20px", "20px"]}
+      _hover={{
+        bgColor: "white",
+      }}
+    >
+      {icon}
+    </Box>
   );
 };
 
@@ -57,14 +80,7 @@ const Topbar = () => {
         direction="row"
         alignContent="center"
         alignItems="center"
-        justifyContent={[
-          "flex-start",
-          "space-between",
-          "space-between",
-          "left",
-          "space-between",
-          "space-between",
-        ]}
+        justifyContent={["left", "left", "left", "left", "left", "left"]}
         pt="20px"
       >
         <Box
@@ -77,8 +93,8 @@ const Topbar = () => {
           <Img boxSize="38px" bgColor="gray.500" />
         </Box>
 
-        <Box width={["39%", "48%", "54%", "29%", "36%", "38%"]}>
-          <Stack direction="row" justifyContent="center">
+        <Box width={["50%", "full", "100%", "29%", "36%", "38%"]}>
+          <Stack direction="row" justifyContent={"flex-start"}>
             {/* topbar component for mobile and tablet */}
             <Box
               display={["flex", "flex", "flex", "none", "none", "none"]}
@@ -88,10 +104,10 @@ const Topbar = () => {
               <Box w="80px" ml="10px">
                 <IconButton
                   aria-label="Open Menu"
-                  boxSize="45px"
+                  boxSize={["50px", "50px", "50px", "0", "0", "0"]}
                   bgColor="gray.500"
                   icon={<GiHamburgerMenu />}
-                  display={["flex", "flex", "flex", "none", "none"]}
+                  display={["flex", "flex", "flex", "none", "none", "none"]}
                   onClick={() => changeDisplay("flex")}
                 />
               </Box>
@@ -128,12 +144,16 @@ const Topbar = () => {
 
               {/* constructor ui logo */}
               <Box w="80px">
-                <Img boxSize="45px" bgColor="gray.500" />
+                <Img
+                  boxSize={["50px", "50px", "50px", "0", "0", "0"]}
+                  bgColor="gray.500"
+                  ml={["-2", "0", "0", "0", "0", "0"]}
+                />
               </Box>
               <Box
                 display={["none", "none", "flex", "none", "none", "none"]}
-                fontSize="14px"
-                w="150px"
+                fontSize={["14px", "14px", "25px"]}
+                w={["150px", "150px", "200px", "150px", "150px", "150px"]}
                 alignItems="center"
               >
                 Constructor Kit
@@ -144,50 +164,29 @@ const Topbar = () => {
             <Text
               bgColor="red"
               display={["none", "flex", "flex", "flex", "flex", "flex"]}
-              w={["full", "full", "200px", "full", "full", "full"]}
+              w={["0", "200px", "250px", "full", "full", "full"]}
             >
               Search
             </Text>
+
+            {/*top bar components for mobile and tablets */}
+            <Box>
+              <Stack
+                direction="row"
+                display={["flex", "flex", "flex", "none", "none", "none"]}
+                gap={["0", "5", "6", "0", "0", "0"]}
+              >
+                <TopbarItems2 icon={<BsFillBookmarkFill size="40px" />} />
+                <TopbarItems2 icon={<RiPlayListAddLine size="40px" />} />
+                <TopbarItems2 icon={<AiTwotoneSetting size="40px" />} />
+                <TopbarItems2 icon={<RxAvatar size="40px" />} />
+              </Stack>
+            </Box>
+            {/*top bar components for mobile and tablets */}
           </Stack>
         </Box>
 
         <Box w={["44%", "44%", "44%", "42%", "46%", "40%"]}>
-          {/*top bar components for mobile and tablets */}
-          <Box>
-            <Stack
-              direction="row"
-              display={["flex", "flex", "flex", "none", "none", "none"]}
-              justifyContent={[
-                "left",
-                "space-evenly",
-                "space-evenly",
-                "space-evenly",
-                "space-evenly",
-                "space-evenly",
-              ]}
-            >
-              <TopbarItems
-                title={"Personal Release"}
-                leftIcon={<BsFillBookmarkFill size="20px" />}
-              />
-              <TopbarItems
-                title={"  Create Playlist"}
-                leftIcon={<RiPlayListAddLine size="20px" />}
-              />
-              <TopbarItems
-                title={" Settings"}
-                leftIcon={<AiTwotoneSetting size="20px" />}
-              />
-              <Box display={["flex", "flex", "flex", "none", "none", "none"]}>
-                <Img
-                  boxSize={["50px", "60px", "60px", "60px", "60px", "60px"]}
-                  bgColor="gray.500"
-                />
-              </Box>
-            </Stack>
-          </Box>
-          {/*top bar components for mobile and tablets */}
-
           <Stack
             bgColor="red"
             display={["none", "none", "none", "flex", "flex", "flex"]}
