@@ -17,10 +17,15 @@ import { NewAlbum, RecommendedAlbums } from "./body/albums";
 
 const Body = () => {
   return (
-    <Box width="full" h="auto" bgColor="gray.50">
+    <Box
+      width={["90%", "56%", "75%", "84%", "95%", "92%"]}
+      h="auto"
+      bgColor="gray.50"
+    >
       {/* bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]} */}
 
       <Stack
+        bgColor="yellow"
         direction="row"
         pt="40px"
         pb="15px"
@@ -107,14 +112,14 @@ const Body = () => {
           title={"Pyrex Picasso"}
           artist={"Benny the Butcher"}
         />
-        {/* <RecommendedAlbums
+        <RecommendedAlbums
           title={"Chavoss World 2"}
           artist={"Chavo, Pierre Bourne"}
         />
         <RecommendedAlbums
           title={"Just A Matter of S..."}
           artist={"Chavo, Pierre Bourne"}
-        /> */}
+        />
       </Stack>
 
       <Stack
