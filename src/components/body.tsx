@@ -98,7 +98,9 @@ const Body = () => {
         direction="row"
         display="flex"
         pt="10px"
-        pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
+        // w={["85%", "85%", "85%", "89%", "93%", "94%"]}
+        ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
+        // pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
         gap={["1", "1", "1", "2", "2", "4"]}
         overflowX={"auto"}
       >
