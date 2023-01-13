@@ -1,4 +1,4 @@
-import { VStack, Card, Text } from "@chakra-ui/react";
+import { VStack, Card, Text, Img, Stack } from "@chakra-ui/react";
 import React from "react";
 
 type Props = {
@@ -33,25 +33,29 @@ export const NewAlbum = ({ title, newAlbumTitle, newAlbumArtist }: Props) => {
 
 export const RecommendedAlbums = ({ title, artist }: Props) => {
   return (
-    <VStack>
-      {/* set horizontal scroll */}
-      <Card
-        w={["50px", "200px", "200px", "203px", "198px", "220px"]}
-        h={["200px", "200px", "200px", "200px", "200px", "200px"]}
-        bgColor="gray.500"
-      ></Card>
-      <Card
-        w={["50px", "200px", "200px", "203px", "198px", "220px"]}
-        h={["100px", "100px", "100px", "100px", "100px", "100px"]}
-        bgColor="gray.300"
-      >
-        <Text pl="20px" pt="20px">
-          {title}
-        </Text>
-        <Text pl="20px" pt="5px">
-          {artist}
-        </Text>
-      </Card>
-    </VStack>
+    <Stack>
+      <VStack>
+        {/* set horizontal scroll */}
+        <Card
+          w={["150px", "200px", "200px", "203px", "198px", "220px"]}
+          h={["150px", "200px", "200px", "200px", "200px", "200px"]}
+          bgColor="gray.500"
+        >
+          <Img boxSize="50px" />
+        </Card>
+        <Card
+          w={["150px", "200px", "200px", "203px", "198px", "220px"]}
+          h={["100px", "100px", "100px", "100px", "100px", "100px"]}
+          bgColor="gray.300"
+        >
+          <Text pl="20px" pt="20px">
+            {title}
+          </Text>
+          <Text pl="20px" pt="5px">
+            {artist}
+          </Text>
+        </Card>
+      </VStack>
+    </Stack>
   );
 };

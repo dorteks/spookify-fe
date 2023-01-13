@@ -11,9 +11,11 @@ import {
 } from "@chakra-ui/react";
 import { AiFillLike } from "react-icons/ai";
 import { MdShowChart } from "react-icons/md";
-import { NewAlbum, RecommendedAlbums } from "./body/albums";
 import { TopAlbumsCard } from "./body/topalbums";
 import { TopSinglesCard } from "./body/topsingles";
+import { NewAlbum, RecommendedAlbums } from "./body/albums";
+
+const pics = [<AiFillLike />, <MdShowChart />];
 
 const Body = () => {
   return (
@@ -24,7 +26,7 @@ const Body = () => {
         direction="row"
         pt="40px"
         pb="15px"
-        pl="80px"
+        pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
         gap={["0", "5", "8", "8", "8", "8"]}
       >
         <NewAlbum
@@ -42,7 +44,7 @@ const Body = () => {
       <Stack
         mt={["5px", "5px", "5px", "20px", "30px", "30px"]}
         pb="10px"
-        pl="80px"
+        pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
         display="flex"
         alignContent="center"
         justifyContent="space-between"
@@ -91,9 +93,11 @@ const Body = () => {
 
       <Stack
         direction="row"
+        display="flex"
         pt="10px"
-        pl="80px"
+        pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
         gap={["1", "1", "1", "2", "2", "4"]}
+        overflowX={"auto"}
       >
         <RecommendedAlbums title={"Good Things"} artist={"Dan + Shay"} />
         <RecommendedAlbums
@@ -105,20 +109,20 @@ const Body = () => {
           title={"Pyrex Picasso"}
           artist={"Benny the Butcher"}
         />
-        <RecommendedAlbums
+        {/* <RecommendedAlbums
           title={"Chavoss World 2"}
           artist={"Chavo, Pierre Bourne"}
         />
         <RecommendedAlbums
           title={"Just A Matter of S..."}
           artist={"Chavo, Pierre Bourne"}
-        />
+        /> */}
       </Stack>
 
       <Stack
         direction={["column", "column", "row", "row", "row", "row"]}
         mt="60px"
-        ml="80px"
+        pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
         gap={["2", "2", "2", "1", "4", "8"]}
       >
         <Card
@@ -249,7 +253,7 @@ const Body = () => {
       <Stack
         direction="row"
         pt="50px"
-        pl="80px"
+        pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
         gap={["1", "1", "1", "3", "3", "6"]}
       >
         <Card
@@ -264,6 +268,7 @@ const Body = () => {
             LADY GAGA
           </Text>
         </Card>
+
         <Card
           w={["160px", "160px", "160px", "420px", "340px", "460px"]}
           h="350px"
