@@ -85,7 +85,7 @@ export const SearchBox = () => {
   return (
     <Box
       display={["none", "flex", "flex", "flex", "flex", "flex"]}
-      w={["0", "180px", "200px", "full", "full", "full"]}
+      w={["0", "180px", "200px", "90%", "90%", "90%"]}
       borderRadius="3px"
       alignContent="center"
       pt="9px"
@@ -111,6 +111,7 @@ const Topbar = () => {
   return (
     <Box
       // bgColor="#f1faee"
+      width={["", "", "", "55%", "65%", "76%"]}
       bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
       h={"100px"}
       as="section"
