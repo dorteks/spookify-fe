@@ -55,7 +55,7 @@ export const TopbarItems2 = ({ icon }: TopbarItem2Props) => {
       boxSize="60px"
       borderRadius="30px"
       p="10px"
-      ml={["-9", "20px", "20px"]}
+      ml={["-12", "20px", "20px"]}
       _hover={{
         bgColor: "white",
       }}
@@ -101,7 +101,7 @@ const Topbar = () => {
               flexDirection="row"
             >
               {/*open menu button starts here */}
-              <Box w="80px" ml="10px">
+              <Box w="80px" ml={["20px", "30px", "40px"]}>
                 <IconButton
                   aria-label="Open Menu"
                   boxSize={["50px", "50px", "50px", "0", "0", "0"]}
@@ -147,7 +147,7 @@ const Topbar = () => {
                 <Img
                   boxSize={["50px", "50px", "50px", "0", "0", "0"]}
                   bgColor="gray.500"
-                  ml={["-2", "0", "0", "0", "0", "0"]}
+                  ml={["-4", "-1", "0", "0", "0", "0"]}
                 />
               </Box>
               <Box
@@ -155,6 +155,7 @@ const Topbar = () => {
                 fontSize={["14px", "14px", "25px"]}
                 w={["150px", "150px", "200px", "150px", "150px", "150px"]}
                 alignItems="center"
+                ml={["0", "0", "-2"]}
               >
                 Constructor Kit
               </Box>
@@ -164,7 +165,7 @@ const Topbar = () => {
             <Text
               bgColor="red"
               display={["none", "flex", "flex", "flex", "flex", "flex"]}
-              w={["0", "200px", "250px", "full", "full", "full"]}
+              w={["0", "180px", "200px", "full", "full", "full"]}
             >
               Search
             </Text>
@@ -174,7 +175,7 @@ const Topbar = () => {
               <Stack
                 direction="row"
                 display={["flex", "flex", "flex", "none", "none", "none"]}
-                gap={["0", "5", "6", "0", "0", "0"]}
+                gap={["0", "3", "4", "0", "0", "0"]}
               >
                 <TopbarItems2 icon={<BsFillBookmarkFill size="40px" />} />
                 <TopbarItems2 icon={<RiPlayListAddLine size="40px" />} />
