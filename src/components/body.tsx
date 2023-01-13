@@ -15,8 +15,6 @@ import { TopAlbumsCard } from "./body/topalbums";
 import { TopSinglesCard } from "./body/topsingles";
 import { NewAlbum, RecommendedAlbums } from "./body/albums";
 
-const pics = [<AiFillLike />, <MdShowChart />];
-
 const Body = () => {
   return (
     <Box width="full" h="auto" bgColor="gray.50">
