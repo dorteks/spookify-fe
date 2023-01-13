@@ -1,13 +1,21 @@
 import { useState } from "react";
 import { GrClose } from "react-icons/gr";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { AiTwotoneSetting } from "react-icons/ai";
 import { RiPlayListAddLine } from "react-icons/ri";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { RxAvatar } from "react-icons/rx";
 
 import { SidebarMenu } from "./sidebar/sidebarmenu";
-import { Box, Stack, Img, Text, IconButton, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  Stack,
+  Img,
+  Text,
+  IconButton,
+  Flex,
+  Input,
+} from "@chakra-ui/react";
+import { SearchIcon } from "@chakra-ui/icons";
 
 type TopbarItemsProps = {
   title: any;
@@ -65,6 +73,38 @@ export const TopbarItems2 = ({ icon }: TopbarItem2Props) => {
   );
 };
 
+export const HamburgerIcon = () => {
+  return (
+    <Box>
+      <Img src="/images/hamburger.png" />
+    </Box>
+  );
+};
+
+export const SearchBox = () => {
+  return (
+    <Box
+      display={["none", "flex", "flex", "flex", "flex", "flex"]}
+      w={["0", "180px", "200px", "full", "full", "full"]}
+      borderRadius="3px"
+      alignContent="center"
+      pt="9px"
+    >
+      <Input placeholder="Search" />
+      <SearchIcon ml="-35px" mt="11px" />
+    </Box>
+  );
+};
+
+export const ConstructorIcon = () => {
+  return (
+    <Box bgColor="white">
+      <Img src="/images/constructor.jpg" />
+      {/* <Img bgColor="blue" boxSize="50px" borderRadius="25px" /> */}
+    </Box>
+  );
+};
+
 const Topbar = () => {
   const [display, changeDisplay] = useState("none");
 
@@ -106,11 +146,12 @@ const Topbar = () => {
                   aria-label="Open Menu"
                   boxSize={["50px", "50px", "50px", "0", "0", "0"]}
                   bgColor="gray.500"
-                  icon={<GiHamburgerMenu />}
+                  icon={<HamburgerIcon />}
                   display={["flex", "flex", "flex", "none", "none", "none"]}
                   onClick={() => changeDisplay("flex")}
                 />
               </Box>
+
               {/*open menu button stops here */}
 
               {/*close menu button starts here */}
@@ -144,10 +185,11 @@ const Topbar = () => {
 
               {/* constructor ui logo */}
               <Box w="80px">
-                <Img
+                <IconButton
+                  aria-label="Constructor Icon"
                   boxSize={["50px", "50px", "50px", "0", "0", "0"]}
-                  bgColor="gray.500"
                   ml={["-4", "-1", "0", "0", "0", "0"]}
+                  icon={<ConstructorIcon />}
                 />
               </Box>
               <Box
@@ -162,13 +204,7 @@ const Topbar = () => {
             </Box>
             {/* topbar component for mobile and tablet */}
 
-            <Text
-              bgColor="red"
-              display={["none", "flex", "flex", "flex", "flex", "flex"]}
-              w={["0", "180px", "200px", "full", "full", "full"]}
-            >
-              Search
-            </Text>
+            <SearchBox />
 
             {/*top bar components for mobile and tablets */}
             <Box>
