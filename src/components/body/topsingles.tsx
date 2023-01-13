@@ -11,7 +11,7 @@ type Props = {
 export const TopSinglesCard = ({ number, title, artist, time }: Props) => {
   return (
     <Card
-      w={["280px", "550px", "370px", "460px", "555px", "630px"]}
+      w={["340px", "550px", "370px", "460px", "555px", "630px"]}
       h="80px"
       justify="center"
     >

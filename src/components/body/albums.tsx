@@ -59,3 +59,31 @@ export const RecommendedAlbums = ({ title, artist }: Props) => {
     </Stack>
   );
 };
+
+type AlbumProps = {
+  title: any;
+  artist: any;
+};
+
+export const Albums = ({ title, artist }: AlbumProps) => {
+  return (
+    <Card
+      w={["500px", "600px", "600px", "420px", "350px", "460px"]}
+      h={["200px", "250px", "350px", "330px", "340px", "350px"]}
+      bgColor="gray.500"
+    >
+      <Text
+        pt={["45px", "45px", "80px", "70px", "70px", "70px"]}
+        pl={["20px", "35px", "70px", "60px", "60px", "60px"]}
+      >
+        {title}
+      </Text>
+      <Text
+        pt={["70px", "100px", "150px", "140px", "140px", "150px"]}
+        pl={["20px", "35px", "70px", "60px", "60px", "60px"]}
+      >
+        {artist}
+      </Text>
+    </Card>
+  );
+};

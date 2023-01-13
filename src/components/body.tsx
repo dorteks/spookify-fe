@@ -13,7 +13,7 @@ import { AiFillLike } from "react-icons/ai";
 import { MdShowChart } from "react-icons/md";
 import { TopAlbumsCard } from "./body/topalbums";
 import { TopSinglesCard } from "./body/topsingles";
-import { NewAlbum, RecommendedAlbums } from "./body/albums";
+import { Albums, NewAlbum, RecommendedAlbums } from "./body/albums";
 
 const Body = () => {
   return (
@@ -47,23 +47,25 @@ const Body = () => {
       <Stack
         mt={["5px", "5px", "5px", "20px", "30px", "30px"]}
         pb="10px"
-        pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
+        w={["43%", "86%", "83%", "88%", "85%", "85%"]}
+        ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
         display="flex"
         alignContent="center"
         justifyContent="space-between"
+        bgColor="red"
       >
         <HStack
           align="center"
           justifyContent="space-between"
-          w={["0", "93%", "90%", "81%", "90%", "96%"]}
-          h="80px"
+          w={["98%", "98%", "98%", "98%", "98%", "98%"]}
+          h={["60px", "80px", "80px", "80px", "80px", "80px"]}
         >
           <Stack direction="row" ml="10px">
             <Box mr="10px" pt="3px" pb="3px" color="gray.500">
               <AiFillLike size="25px" />
             </Box>
             <Text
-              fontSize={["2px", "14px", "14px", "14px", "14px", "16px"]}
+              fontSize={["14px", "14px", "14px", "14px", "14px", "16px"]}
               p="5px"
               fontWeight="bold"
               color="gray.700"
@@ -73,9 +75,9 @@ const Body = () => {
             </Text>
           </Stack>
 
-          <Box mr="15px">
+          <Box>
             <Avatar
-              size="md"
+              size={["sm", "md", "md", "md", "md", "md"]}
               pt="3px"
               pb="3px"
               mr="20px"
@@ -83,7 +85,7 @@ const Body = () => {
               src=""
             />
             <Avatar
-              size="md"
+              size={["sm", "md", "md", "md", "md", "md"]}
               pt="3px"
               pb="3px"
               mr="15px"
@@ -98,11 +100,10 @@ const Body = () => {
         direction="row"
         display="flex"
         pt="10px"
-        // w={["85%", "85%", "85%", "89%", "93%", "94%"]}
+        w={["43%", "86%", "83%", "88%", "85%", "85%"]}
         ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
-        // pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
         gap={["1", "1", "1", "2", "2", "4"]}
-        overflowX={"auto"}
+        overflowX={["auto", "auto", "auto", "auto", "auto", "auto"]}
       >
         <RecommendedAlbums title={"Good Things"} artist={"Dan + Shay"} />
         <RecommendedAlbums
@@ -132,7 +133,7 @@ const Body = () => {
       >
         <Card
           h="auto"
-          width={["320px", "600px", "410px", "510px", "600px", "673px"]}
+          width={["380px", "600px", "420px", "510px", "600px", "673px"]}
           bgColor="gray.50"
         >
           <CardHeader mt="20px">
@@ -194,7 +195,7 @@ const Body = () => {
 
         <Card
           h="auto"
-          width={["320px", "600px", "410px", "510px", "600px", "673px"]}
+          width={["380px", "600px", "420px", "510px", "600px", "673px"]}
           bgColor="gray.50"
         >
           <CardHeader mt="20px">
@@ -257,44 +258,15 @@ const Body = () => {
 
       <Stack
         direction="row"
+        w={["41%", "86%", "83%", "88%", "85%", "85%"]}
         pt="50px"
-        pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
-        gap={["1", "1", "1", "3", "3", "6"]}
+        ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
+        gap={["2", "1", "1", "3", "3", "6"]}
+        mb="20px"
       >
-        <Card
-          w={["160px", "160px", "160px", "420px", "340px", "460px"]}
-          h="350px"
-          bgColor="gray.500"
-        >
-          <Text pt="40px" pl="80px">
-            THE RADIO SHOW
-          </Text>
-          <Text pt="200px" pl="80px">
-            LADY GAGA
-          </Text>
-        </Card>
-
-        <Card
-          w={["160px", "160px", "160px", "420px", "340px", "460px"]}
-          h="350px"
-          bgColor="gray.500"
-        >
-          <Text pt="40px" pl="80px">
-            NEW ALBUM
-          </Text>
-          <Text pt="200px" pl="80px">
-            THE KILLERS
-          </Text>
-        </Card>
-        <Card
-          w={["160px", "160px", "160px", "420px", "340px", "460px"]}
-          h="350px"
-          bgColor="gray.500"
-        >
-          <Text pt="40px" pl="80px">
-            TAYLOR SWIFT OFFICIAL
-          </Text>
-        </Card>
+        <Albums title={"THE RADIO SHOW"} artist={"LADY GAGA"} />
+        <Albums title={" NEW ALBUM"} artist={" THE KILLERS"} />
+        <Albums title={" TAYLOR SWIFT OFFICIAL"} artist={"LADY GAGA"} />
       </Stack>
     </Box>
   );
