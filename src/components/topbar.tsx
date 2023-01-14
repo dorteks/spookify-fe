@@ -111,7 +111,7 @@ const Topbar = () => {
   return (
     <Box
       // bgColor="#f1faee"
-      width={["", "", "", "55%", "65%", "76%"]}
+      width={["", "", "", "51%", "60%", "69%"]}
       bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
       h={"100px"}
       as="section"
