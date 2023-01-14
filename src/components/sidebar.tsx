@@ -32,7 +32,6 @@ const Sidebar = () => {
           <Text
             fontWeight="bold"
             fontSize={["0px", "16px", "16px", "20px", "20px", "23px"]}
-            // fontSize={["0px","0px", "16px", "16px", "16px", "16px", "16px"]}
           >
             Constructor UI Kit
           </Text>
@@ -52,7 +51,6 @@ const Sidebar = () => {
             color="gray.700"
             fontWeight="bold"
             fontSize={["0px", "0px", "14px", "14px", "14px", "14px"]}
-            // fontSize={["0px","0px", "0px", "14px", "14px", "14px", "14px"]}
           >
             MAIN CATEGORIES
           </Text>
@@ -78,7 +76,6 @@ const Sidebar = () => {
             color="gray.700"
             fontWeight="bold"
             fontSize={["14px", "14px", "14px", "14px", "14px", "14px"]}
-            // fontSize={["14px", "14px", "14px", "14px", "14px", "14px", "14px"]}
           >
             YOUR MUSIC
           </Text>
@@ -86,6 +83,7 @@ const Sidebar = () => {
           <Main title={"History"} leftIcon={<GrHistory />} />
         </VStack>
       </Box>
+
       <Box pl="5px" pr="10px" pt="45px">
         <VStack align="left">
           <Text
@@ -106,6 +104,7 @@ const Sidebar = () => {
           <Playlists title={"Slipknot"} leftIcon={<RiPlayListFill />} />
         </VStack>
       </Box>
+
       <Box
         pl="5px"
         pr="10px"

@@ -13,31 +13,76 @@ export const TopbarSmall = () => {
   const [display, changeDisplay] = useState("none");
 
   return (
-    <Box
-      display={["flex", "none", "none", "none", "none", "none"]}
-      bgColor={["pink", "", "", "", "", "", ""]}
-      ml="-24"
-    >
+    <Box ml="-24" display={["flex", "none", "none", "none", "none", "none"]}>
       <Box>
         <Stack direction="row" align="center" gap={"1"}>
           <IconButton
+            boxSize="40px"
             bgColor="gray.500"
             aria-label="Open Menu"
             icon={<HamburgerIcon />}
             onClick={() => changeDisplay("flex")}
-            boxSize="40px"
           />
 
           <IconButton
+            boxSize="25px"
             icon={<ConstructorIcon />}
             aria-label="Constructor Icon"
-            boxSize="25px"
+            _hover={{
+              fontWeight: "bold",
+              borderRadius: "25px",
+              alignItems: "center",
+              backgroundColor: "white",
+            }}
           />
-
-          <BsFillBookmarkFill size="40px" />
-          <RiPlayListAddLine size="40px" />
-          <AiTwotoneSetting size="40px" />
-          <RxAvatar size="40px" />
+          <Stack
+            _hover={{
+              p: "10px",
+              boxSize: "50px",
+              fontWeight: "bold",
+              borderRadius: "30px",
+              alignItems: "center",
+              backgroundColor: "white",
+            }}
+          >
+            <BsFillBookmarkFill size="40px" />
+          </Stack>
+          <Stack
+            _hover={{
+              p: "10px",
+              boxSize: "50px",
+              fontWeight: "bold",
+              borderRadius: "30px",
+              alignItems: "center",
+              backgroundColor: "white",
+            }}
+          >
+            <RiPlayListAddLine size="40px" />
+          </Stack>
+          <Stack
+            _hover={{
+              p: "10px",
+              boxSize: "50px",
+              fontWeight: "bold",
+              borderRadius: "30px",
+              alignItems: "center",
+              backgroundColor: "white",
+            }}
+          >
+            <AiTwotoneSetting size="40px" />
+          </Stack>
+          <Stack
+            _hover={{
+              p: "10px",
+              boxSize: "50px",
+              fontWeight: "bold",
+              borderRadius: "30px",
+              alignItems: "center",
+              backgroundColor: "white",
+            }}
+          >
+            <RxAvatar size="40px" />
+          </Stack>
         </Stack>
       </Box>
 

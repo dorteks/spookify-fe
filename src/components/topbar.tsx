@@ -113,7 +113,7 @@ const Topbar = () => {
       h={"100px"}
       as="section"
       width={["", "", "", "", "50.3%", "57%", "65%"]}
-      bgColor={["pink", "purple", "blue", "yellow", "brown", "green", "orange"]}
+      // bgColor={["pink", "purple", "blue", "yellow", "brown", "green", "orange"]}
     >
       <Stack
         pt="20px"
@@ -166,6 +166,8 @@ const Topbar = () => {
                   ]}
                 />
               </Box>
+
+              {/* smallest screen size topbar */}
               <TopbarSmall />
 
               {/*close menu button starts here */}
