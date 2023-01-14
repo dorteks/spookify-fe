@@ -15,41 +15,29 @@ import { TopSinglesCard } from "../reusableComponents/topsingles";
 export const TopSinglesTopAlbumsBody = () => {
   return (
     <Stack
-      mt="60px"
-      gap={["2", "2", "2", "1", "4", "8"]}
-      // gap={["2","2", "2", "2", "1", "4", "8"]}
-
-      pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
-      // pl={["20px","20px", "40px", "80px", "80px", "80px", "80px"]}
-
-      direction={["column", "column", "row", "row", "row", "row"]}
-      // direction={["column","column", "column", "row", "row", "row", "row"]}
+      mb="20px"
+      mt="20px"
+      gap={["2", "2", "2", "2", "1", "4", "8"]}
+      pl={["15px", "30px", "40px", "50px", "80px", "80px", "80px"]}
+      direction={["column", "column", "column", "row", "row", "row", "row"]}
     >
       <Card
         h="auto"
         bgColor="gray.50"
-        width={["380px", "628px", "410px", "512px", "615px", "673px"]}
-        // width={["380px","380px", "628px", "410px", "512px", "615px", "673px"]}
+        width={["290px", "370px", "670px", "435px", "512px", "615px", "673px"]}
       >
         <CardHeader mt="20px">
           <HStack align="left">
             <Box mr="10px" pt="3px" pb="3px" color="gray.500">
               <MdShowChart size="20px" />
             </Box>
-            <Text
-              ml="20px"
-              mt="10px"
-              mb="20px"
-              fontSize="16px"
-              color="gray.700"
-              fontWeight="bold"
-            >
+            <Text ml="20px" fontSize="16px" color="gray.700" fontWeight="bold">
               Top Singles
             </Text>
           </HStack>
         </CardHeader>
         <CardBody>
-          <Stack pt="10px" mb="20px">
+          <Stack pt="10px" mb="20px" ml={["-2", "0", "0"]}>
             <TopSinglesCard
               number={"01"}
               title={"GYALIS"}
@@ -92,8 +80,7 @@ export const TopSinglesTopAlbumsBody = () => {
       <Card
         h="auto"
         bgColor="gray.50"
-        width={["380px", "628px", "410px", "512px", "615px", "673px"]}
-        // width={["380px","380px", "628px", "410px", "512px", "615px", "673px"]}
+        width={["290px", "370px", "670px", "435px", "512px", "615px", "673px"]}
       >
         <CardHeader mt="20px">
           <HStack align="left">
@@ -113,7 +100,7 @@ export const TopSinglesTopAlbumsBody = () => {
           </HStack>
         </CardHeader>
         <CardBody>
-          <Stack pt="10px" mb="20px">
+          <Stack pt="10px" mb="20px" ml={["-2", "0", "0"]}>
             <TopAlbumsCard
               number={"01"}
               title={"Faith"}
