@@ -14,15 +14,13 @@ export const TopChartsBody = () => {
         justifyContent="space-between"
         w={["43%", "80%", "85%", "78%", "88%", "85%", "85%"]}
         mt={["20px", "20px", "20px", "30px", "30px", "30px", "30px"]}
-        ml={["15px", "30px", "40px", "50px", "80px", "80px", "80px"]}
+        ml={["15px", "30px", "20px", "50px", "50px", "80px", "80px"]}
       >
         <HStack
+          w="98%"
           align="center"
           justifyContent="space-between"
-          w={["98%", "98%", "98%", "98%", "98%", "98%"]}
-          // w={["98%","98%", "98%", "98%", "98%", "98%", "98%"]}
-          h={["60px", "80px", "80px", "80px", "80px", "80px"]}
-          // h={["60px","60px", "80px", "80px", "80px", "80px", "80px"]}
+          h={["60px", "60px", "80px", "80px", "80px", "80px", "80px"]}
         >
           <Stack direction="row" ml="10px">
             <Box mr="10px" pt="3px" pb="3px" color="gray.500">
@@ -33,14 +31,26 @@ export const TopChartsBody = () => {
               color="gray.700"
               fontWeight="bold"
               textAlign="center"
-              fontSize={["14px", "14px", "14px", "14px", "14px", "16px"]}
-              // fontSize={["14px","14px", "14px", "14px", "14px", "14px", "16px"]}
+              fontSize={[
+                "14px",
+                "14px",
+                "14px",
+                "14px",
+                "14px",
+                "14px",
+                "16px",
+              ]}
             >
               Top Charts by City
             </Text>
           </Stack>
 
-          <Stack direction="row" color="gray.500" pr="30px" gap={5}>
+          <Stack
+            direction="row"
+            color="gray.500"
+            pr={["0", "5px", "10px", "10px", "30px"]}
+            gap={["0", "1", "5", "5", "5"]}
+          >
             <BsArrowLeftCircle size="35px" />
             <BsArrowRightCircle size="35px" />
           </Stack>
@@ -54,7 +64,7 @@ export const TopChartsBody = () => {
         overflowX="auto"
         gap={["1", "1", "1", "1", "2", "2", "4"]}
         w={["43%", "80%", "85%", "78%", "88%", "85%", "85%"]}
-        ml={["15px", "30px", "40px", "50px", "80px", "80px", "80px"]}
+        ml={["15px", "30px", "20px", "50px", "50px", "80px", "80px"]}
       >
         <TopCharts
           city={"New York City"}

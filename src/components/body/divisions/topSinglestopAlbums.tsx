@@ -18,7 +18,7 @@ export const TopSinglesTopAlbumsBody = () => {
       mb="20px"
       mt="20px"
       gap={["2", "2", "2", "2", "1", "4", "8"]}
-      pl={["15px", "30px", "40px", "50px", "80px", "80px", "80px"]}
+      pl={["15px", "30px", "20px", "50px", "50px", "80px", "80px"]}
       direction={["column", "column", "column", "row", "row", "row", "row"]}
     >
       <Card
