@@ -22,8 +22,8 @@ const breakpoints = {
   sm: "769px",
   md: "1025px",
   lg: "1441px",
-  xl: "1730px",
-  "2xl": "1940px",
+  xl: "1731px",
+  "2xl": "1941px",
 };
 
 const theme = extendTheme({ ...config, ...customThemeConfig, breakpoints });
