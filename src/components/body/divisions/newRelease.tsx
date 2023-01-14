@@ -10,7 +10,7 @@ export const NewReleaseBody = () => {
       overflowX="auto"
       gap={["1", "1", "1", "1", "2", "2", "4"]}
       w={["43%", "80%", "85%", "78%", "88%", "85%", "85%"]}
-      ml={["15px", "30px", "40px", "50px", "80px", "80px", "80px"]}
+      ml={["15px", "30px", "20px", "50px", "50px", "80px", "80px"]}
     >
       <NewAlbumNew
         title={"THE RADIO SHOW"}

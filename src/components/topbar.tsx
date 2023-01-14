@@ -14,6 +14,7 @@ import {
   Stack,
   Input,
   IconButton,
+  Avatar,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { TopbarSmall } from "./topbar/topbarsmall";
@@ -47,9 +48,7 @@ export const TopbarItems = ({ title, leftIcon }: TopbarItemsProps) => {
 
       <Text
         fontWeight="bold"
-        // fontSize={["16px", "16px", "10px", "15px", "16px"]}
         fontSize={["16px", "16px", "16px", "10px", "15px", "16px"]}
-        // display={["none", "none", "flex", "flex", "flex", "flex"]}
         display={["none", "none", "none", "flex", "flex", "flex", "flex"]}
       >
         {title}
@@ -64,7 +63,6 @@ export const TopbarItems2 = ({ icon }: TopbarItem2Props) => {
       p="10px"
       boxSize="60px"
       borderRadius="30px"
-      // ml={["-12", "20px", "20px"]}
       ml={["-12", "-12", "20px", "20px"]}
       _hover={{
         bgColor: "white",
@@ -89,9 +87,7 @@ export const SearchBox = () => {
       pt="9px"
       borderRadius="3px"
       alignContent="center"
-      // w={["0", "180px", "200px", "90%", "90%", "90%"]}
       w={["0", "0", "180px", "200px", "90%", "90%", "90%"]}
-      // display={["none", "flex", "flex", "flex", "flex", "flex"]}
       display={["none", "none", "flex", "flex", "flex", "flex", "flex"]}
     >
       <Input placeholder="Search" />
@@ -104,7 +100,6 @@ export const ConstructorIcon = () => {
   return (
     <Box bgColor="white">
       <Img src="/images/constructor.jpg" />
-      {/* <Img bgColor="blue" boxSize="50px" borderRadius="25px" /> */}
     </Box>
   );
 };
@@ -117,9 +112,7 @@ const Topbar = () => {
       // bgColor="#f1faee"
       h={"100px"}
       as="section"
-      // width={["", "", "", "51%", "60%", "69%"]}
-      width={["", "", "", "", "51%", "60%", "69%"]}
-      // bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
+      width={["", "", "", "", "50.3%", "57%", "65%"]}
       bgColor={["pink", "purple", "blue", "yellow", "brown", "green", "orange"]}
     >
       <Stack
@@ -128,55 +121,40 @@ const Topbar = () => {
         direction="row"
         alignItems="center"
         alignContent="center"
-        // justifyContent={["left", "left", "left", "left", "left", "left"]}
-        justifyContent={[
-          "left",
-          "left",
-          "left",
-          "left",
-          "left",
-          "left",
-          "left",
-        ]}
+        justifyContent={["left"]}
       >
         <Box
           ml="15px"
           mr="15px"
           bgColor="red"
-          // w={["3%", "5%", "4%", "3%", "3%", "3%"]}
-          w={["3%", "3%", "5%", "4%", "3%", "3%", "3%"]}
-          // display={["none", "none", "none", "flex", "flex", "flex"]}
+          w={["0", "0", "0", "0", "5%", "5%", "5%"]}
           display={["none", "none", "none", "none", "flex", "flex", "flex"]}
         >
-          <Img boxSize="38px" bgColor="gray.500" />
+          <Img
+            w="60px"
+            h="60px"
+            ml="5px"
+            // boxSize="60px"
+            bgColor="gray.500"
+            src="/images/interface.png"
+          />
         </Box>
 
-        <Box
-          // width={["50%", "full", "100%", "29%", "36%", "38%"]}
-          width={["50%", "50%", "full", "100%", "29%", "36%", "38%"]}
-        >
+        <Box width={["50%", "50%", "full", "100%", "29%", "36%", "38%"]}>
           <Stack direction="row" justifyContent={"flex-start"}>
             {/* topbar component for mobile and tablet */}
             <Box
               flexDirection="row"
-              // display={["flex", "flex", "flex", "none", "none", "none"]}
               display={["flex", "flex", "flex", "flex", "none", "none", "none"]}
             >
               {/*open menu button starts here */}
-              <Box
-                // w="80px"
-                // ml={["20px", "30px", "40px"]}
-                w="80px"
-                ml={["20px", "20px", "30px", "40px"]}
-              >
+              <Box w="80px" ml={["20px", "20px", "30px", "40px"]}>
                 <IconButton
                   bgColor="gray.500"
                   aria-label="Open Menu"
                   icon={<HamburgerIcon />}
                   onClick={() => changeDisplay("flex")}
-                  // boxSize={["50px", "50px", "50px", "0", "0", "0"]}
-                  boxSize={["50px", "50px", "50px", "50px", "0", "0", "0"]}
-                  // display={["flex", "flex", "flex", "none", "none", "none"]}
+                  boxSize={["0", "50px", "50px", "50px", "0", "0", "0"]}
                   display={[
                     "none",
                     "flex",
@@ -223,10 +201,8 @@ const Topbar = () => {
                 <IconButton
                   icon={<ConstructorIcon />}
                   aria-label="Constructor Icon"
-                  // ml={["-4", "-1", "0", "0", "0", "0"]}
                   ml={["-4", "-4", "-1", "0", "0", "0", "0"]}
-                  // boxSize={["50px", "50px", "50px", "0", "0", "0"]}
-                  boxSize={["50px", "50px", "50px", "50px", "0", "0", "0"]}
+                  boxSize={["0", "50px", "50px", "50px", "0", "0", "0"]}
                   display={[
                     "none",
                     "flex",
@@ -240,11 +216,8 @@ const Topbar = () => {
               </Box>
               <Box
                 alignItems="center"
-                // ml={["0", "0", "-2"]}
                 ml={["0", "0", "0", "-2"]}
-                // fontSize={["14px", "14px", "25px"]}
                 fontSize={["14px", "14px", "14px", "25px"]}
-                // display={["none", "none", "flex", "none", "none", "none"]}
                 display={[
                   "none",
                   "none",
@@ -254,16 +227,7 @@ const Topbar = () => {
                   "none",
                   "none",
                 ]}
-                // w={["150px", "150px", "200px", "150px", "150px", "150px"]}
-                w={[
-                  "150px",
-                  "150px",
-                  "150px",
-                  "200px",
-                  "150px",
-                  "150px",
-                  "150px",
-                ]}
+                w={["0", "0", "0", "200px", "0", "0", "0"]}
               >
                 Constructor Kit
               </Box>
@@ -275,9 +239,7 @@ const Topbar = () => {
             <Box>
               <Stack
                 direction="row"
-                // gap={["0", "3", "4", "0", "0", "0"]}
                 gap={["0", "0", "3", "4", "0", "0", "0"]}
-                // display={["flex", "flex", "flex", "none", "none", "none"]}
                 display={[
                   "none",
                   "flex",
@@ -297,16 +259,12 @@ const Topbar = () => {
           </Stack>
         </Box>
 
-        <Box
-          // w={["44%", "44%", "44%", "42%", "46%", "40%"]}
-          w={["44%", "44%", "44%", "44%", "42%", "46%", "40%"]}
-        >
+        <Box w={["0", "0", "0", "0", "39%", "46%", "40%"]}>
           <Stack
             ml="50px"
             bgColor="red"
             direction="row"
-            justifyContent={["flex-end"]}
-            // display={["none", "none", "none", "flex", "flex", "flex"]}
+            justifyContent={["flex-center"]}
             display={["none", "none", "none", "none", "flex", "flex", "flex"]}
           >
             <TopbarItems
@@ -326,12 +284,10 @@ const Topbar = () => {
 
         <Box
           bgColor="red"
-          // w={["9%", "15%", "9%", "6%", "6%", "9%"]}
-          w={["9%", "9%", "15%", "9%", "6%", "6%", "9%"]}
-          // display={["none", "none", "none", "flex", "flex", "flex"]}
+          w={["0", "0", "0", "0", "6%", "6%", "9%"]}
           display={["none", "none", "none", "none", "flex", "flex", "flex"]}
         >
-          <Img boxSize="60px" bgColor="gray.500" />
+          <Avatar size={"lg"} />
         </Box>
       </Stack>
     </Box>

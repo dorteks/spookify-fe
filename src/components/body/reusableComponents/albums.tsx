@@ -21,39 +21,33 @@ export const NewAlbum = ({
       bgColor="gray.500"
       backgroundSize={"cover"}
       backgroundImage={bckImage}
-      w={["290px", "370px", "325px", "430px", "500px", "600px", "670px"]}
+      w={["290px", "370px", "325px", "430px", "500px", "610px", "670px"]}
       h={["250px", "280px", "300px", "380px", "360px", "360px", "360px"]}
     >
       <Text
         color="white"
+        fontWeight="bold"
         pt={["30px", "30px", "50px", "60px", "60px", "40px"]}
         pl={["20px", "20px", "35px", "50px", "60px", "80px", "80px"]}
         fontSize={["25px", "25px", "30px", "35px", "35px", "40px", "45px"]}
-        fontWeight="bold"
       >
         {title}
       </Text>
       <Text
         color="white"
-        // pl={["20px", "30px", "50px", "60px", "80px", "80px"]}
-        pl={["20px", "20px", "35px", "50px", "60px", "80px", "80px"]}
-        // pt={["55px", "90px", "130px", "110px", "110px", "110px"]}
-        pt={["80px", "70px", "90px", "130px", "110px", "110px", "110px"]}
-        // fontSize={["13px", "20px", "20px", "25px", "25px", "30px"]}
-        fontSize={["16px", "18px", "20px", "20px", "25px", "25px", "30px"]}
         fontWeight="bold"
+        pl={["20px", "20px", "35px", "50px", "60px", "80px", "80px"]}
+        pt={["80px", "70px", "90px", "130px", "110px", "110px", "110px"]}
+        fontSize={["16px", "18px", "20px", "20px", "25px", "25px", "30px"]}
       >
         {newAlbumTitle}
       </Text>
       <Text
         color="white"
-        pt={["10px", "20px"]}
-        // pt={["10px","10px", "20px"]}
-        // pl={["20px", "30px", "50px", "60px", "80px", "80px"]}
-        pl={["20px", "20px", "35px", "50px", "60px", "80px", "80px"]}
-        // fontSize={["13px", "20px", "20px", "25px", "25px", "30px"]}
-        fontSize={["16px", "20px", "20px", "20px", "25px", "25px", "30px"]}
         fontWeight="bold"
+        pt={["10px", "20px"]}
+        pl={["20px", "20px", "35px", "50px", "60px", "80px", "80px"]}
+        fontSize={["16px", "20px", "20px", "20px", "25px", "25px", "30px"]}
       >
         {newAlbumArtist}
       </Text>
@@ -103,8 +97,7 @@ export const TopCharts = ({ city, bckImage }: TopChartsProps) => {
         <Card
           h="50px"
           bgColor="gray.300"
-          w={["250px", "250px", "250px", "250px", "300px", "300px"]}
-          // w={["250px","250px", "250px", "250px", "250px", "300px", "300px"]}
+          w={["250px", "250px", "250px", "250px", "250px", "300px", "300px"]}
         >
           <Stack
             pl="25px"
@@ -122,10 +115,8 @@ export const TopCharts = ({ city, bckImage }: TopChartsProps) => {
           bgColor="gray.500"
           backgroundSize={"cover"}
           backgroundImage={bckImage}
-          w={["250px", "250px", "250px", "250px", "300px", "300px"]}
-          // w={["250px","250px", "250px", "250px", "250px", "300px", "300px"]}
-          h={["250px", "250px", "250px", "250px", "300px", "300px"]}
-          // h={["250px","250px", "250px", "250px", "250px", "300px", "300px"]}
+          w={["250px", "250px", "250px", "250px", "250px", "300px", "300px"]}
+          h={["150px", "150px", "180px", "180px", "180px", "220px", "220px"]}
         >
           {}
         </Card>
@@ -153,10 +144,10 @@ export const NewAlbumNew = ({ title, artist, bckImage }: NewAlbumNewProps) => {
           h={["250px", "260px", "270px", "320px", "320px", "300px", "300px"]}
         >
           <Text
-            color="white"
-            fontSize={["20px", "25px", "25px", "30px", "30px"]}
-            fontWeight="bold"
             pt="40px"
+            color="white"
+            fontWeight="bold"
+            fontSize={["20px", "25px", "25px", "30px", "30px"]}
           >
             {title}
           </Text>

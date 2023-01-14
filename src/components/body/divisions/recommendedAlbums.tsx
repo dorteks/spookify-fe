@@ -14,7 +14,7 @@ export const RecommendedAlbumsBody = () => {
         justifyContent="space-between"
         w={["43.5%", "80%", "85%", "78%", "88%", "85%", "85%"]}
         mt={["30px", "30px", "30px", "30px", "30px", "30px", "30px"]}
-        ml={["15px", "30px", "40px", "50px", "80px", "80px", "80px"]}
+        ml={["15px", "30px", "20px", "50px", "50px", "80px", "80px"]}
       >
         <HStack
           align="center"
@@ -63,7 +63,7 @@ export const RecommendedAlbumsBody = () => {
         overflowX="auto"
         gap={["1", "1", "1", "1", "2", "2", "4"]}
         w={["43.5%", "80%", "85%", "78%", "88%", "85%", "85%"]}
-        ml={["15px", "30px", "40px", "50px", "80px", "80px", "80px"]}
+        ml={["15px", "30px", "20px", "50px", "50px", "80px", "80px"]}
       >
         <RecommendedAlbums
           title={"Good Things"}
