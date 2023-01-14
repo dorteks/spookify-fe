@@ -14,7 +14,6 @@ import {
   Stack,
   Input,
   IconButton,
-  Avatar,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
@@ -83,14 +82,6 @@ export const HamburgerIcon = () => {
   );
 };
 
-export const Circle3dots = () => {
-  return (
-    <Box>
-      <Img src="/images/interface.png" boxSize="38px" />
-    </Box>
-  );
-};
-
 export const SearchBox = () => {
   return (
     <Box
@@ -125,7 +116,7 @@ const Topbar = () => {
       // bgColor="#f1faee"
       h={"100px"}
       as="section"
-      width={["", "", "", "51%", "58%", "69%"]}
+      width={["", "", "", "51%", "60%", "69%"]}
       // width={["", "", "","", "51%", "60%", "69%"]}
       bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
       // bgColor={["pink","purple", "blue", "yellow", "brown", "green", "orange"]}
@@ -143,12 +134,12 @@ const Topbar = () => {
           ml="15px"
           mr="15px"
           bgColor="red"
-          w={["3%", "5%", "4%", "4%", "4%", "4%"]}
+          w={["3%", "5%", "4%", "3%", "3%", "3%"]}
           // w={["3%","3%", "5%", "4%", "3%", "3%", "3%"]}
           display={["none", "none", "none", "flex", "flex", "flex"]}
           // display={["none","none", "none", "none", "flex", "flex", "flex"]}
         >
-          <Img boxSize="50px" bgColor="gray.500" src="/images/interface.png" />
+          <Img boxSize="38px" bgColor="gray.500" />
         </Box>
 
         <Box
@@ -188,13 +179,14 @@ const Topbar = () => {
                 top="0"
                 left="0"
                 h="100vh"
-                w="45vw"
                 pos="fixed"
                 zIndex={20}
                 overflowY="auto"
                 bgColor="gray.50"
                 display={display}
                 flexDirection="column"
+                w={["70vw", "45vw", "45vw"]}
+                // w={["100vw",, "70vw", "45vw", "45vw"]}
               >
                 <Flex justify="flex-end">
                   <Box>
@@ -292,10 +284,11 @@ const Topbar = () => {
           bgColor="red"
           w={["9%", "15%", "9%", "6%", "6%", "9%"]}
           // w={["9%","9%", "15%", "9%", "6%", "6%", "9%"]}
+
           display={["none", "none", "none", "flex", "flex", "flex"]}
           // display={["none", "none","none", "none", "flex", "flex", "flex"]}
         >
-          <Avatar size="lg" />
+          <Img boxSize="60px" bgColor="gray.500" />
         </Box>
       </Stack>
     </Box>
