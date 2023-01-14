@@ -20,8 +20,7 @@ const Sidebar = () => {
         pr="10px"
         pt="25px"
         pl={["20px"]}
-        display={["none", "none", "none", "flex", "flex", "flex"]}
-        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
+        display={["none", "none", "none", "none", "flex", "flex", "flex"]}
       >
         <HStack>
           <Img
@@ -43,8 +42,7 @@ const Sidebar = () => {
         pl="5px"
         pr="10px"
         pt="40px"
-        display={["none", "none", "none", "flex", "flex", "flex"]}
-        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
+        display={["none", "none", "none", "none", "flex", "flex", "flex"]}
       >
         <VStack align="left">
           <Text
@@ -70,8 +68,7 @@ const Sidebar = () => {
         pl="5px"
         pr="10px"
         pt="45px"
-        display={["none", "none", "none", "flex", "flex", "flex"]}
-        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
+        display={["none", "none", "none", "none", "flex", "flex", "flex"]}
       >
         <VStack align="left">
           <Text
@@ -113,8 +110,7 @@ const Sidebar = () => {
         pl="5px"
         pr="10px"
         pt="45px"
-        display={["none", "none", "none", "flex", "flex", "flex"]}
-        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
+        display={["none", "none", "none", "none", "flex", "flex", "flex"]}
       >
         <Button
           ml="20px"
@@ -133,8 +129,7 @@ const Sidebar = () => {
         pl="5px"
         pr="10px"
         pt="45px"
-        display={["none", "none", "none", "flex", "flex", "flex"]}
-        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
+        display={["none", "none", "none", "none", "flex", "flex", "flex"]}
       >
         <VStack align="left">
           <Text
