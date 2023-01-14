@@ -12,7 +12,7 @@ export const RecommendedAlbumsBody = () => {
         display="flex"
         alignContent="center"
         justifyContent="space-between"
-        w={["43.5%", "83%", "82%", "77%", "88%", "85%", "85%"]}
+        w={["43.5%", "80%", "85%", "78%", "88%", "85%", "85%"]}
         mt={["30px", "30px", "30px", "30px", "30px", "30px", "30px"]}
         ml={["15px", "30px", "40px", "50px", "80px", "80px", "80px"]}
       >
@@ -62,7 +62,7 @@ export const RecommendedAlbumsBody = () => {
         direction="row"
         overflowX="auto"
         gap={["1", "1", "1", "1", "2", "2", "4"]}
-        w={["43.5%", "83%", "82%", "77%", "88%", "85%", "85%"]}
+        w={["43.5%", "80%", "85%", "78%", "88%", "85%", "85%"]}
         ml={["15px", "30px", "40px", "50px", "80px", "80px", "80px"]}
       >
         <RecommendedAlbums

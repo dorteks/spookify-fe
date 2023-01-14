@@ -37,7 +37,7 @@ export const TopSinglesTopAlbumsBody = () => {
           </HStack>
         </CardHeader>
         <CardBody>
-          <Stack pt="10px" mb="20px">
+          <Stack pt="10px" mb="20px" ml={["-2", "0", "0"]}>
             <TopSinglesCard
               number={"01"}
               title={"GYALIS"}
@@ -100,7 +100,7 @@ export const TopSinglesTopAlbumsBody = () => {
           </HStack>
         </CardHeader>
         <CardBody>
-          <Stack pt="10px" mb="20px">
+          <Stack pt="10px" mb="20px" ml={["-2", "0", "0"]}>
             <TopAlbumsCard
               number={"01"}
               title={"Faith"}

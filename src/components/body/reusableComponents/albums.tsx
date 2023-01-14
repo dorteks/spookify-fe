@@ -149,15 +149,22 @@ export const NewAlbumNew = ({ title, artist, bckImage }: NewAlbumNewProps) => {
           bgColor="gray.500"
           backgroundSize={"cover"}
           backgroundImage={bckImage}
-          w={["250px", "250px", "280px", "320px", "300px", "300px"]}
-          // w={["250px","250px", "250px", "280px", "320px", "300px", "300px"]}
-          h={["250px", "250px", "280px", "320px", "300px", "300px"]}
-          // h={["250px","250px", "250px", "280px", "320px", "300px", "300px"]}
+          w={["250px", "260px", "270px", "320px", "320px", "300px", "300px"]}
+          h={["250px", "260px", "270px", "320px", "320px", "300px", "300px"]}
         >
-          <Text color="white" fontSize={"30px"} fontWeight="bold" pt="40px">
+          <Text
+            color="white"
+            fontSize={["20px", "25px", "25px", "30px", "30px"]}
+            fontWeight="bold"
+            pt="40px"
+          >
             {title}
           </Text>
-          <Text color="white" fontSize="25px" pt="100px">
+          <Text
+            color="white"
+            fontSize="25px"
+            pt={["110px", "110px", "110px", "130px"]}
+          >
             {artist}
           </Text>
         </Card>

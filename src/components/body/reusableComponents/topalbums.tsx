@@ -11,9 +11,9 @@ type Props = {
 export const TopAlbumsCard = ({ number, title, artist, time }: Props) => {
   return (
     <Card
-      h={["90px", "90px", "90px", "80px"]}
+      h={["80px", "90px", "90px", "80px"]}
       justify="center"
-      w={["260px", "330px", "620px", "395px", "460px", "555px", "630px"]}
+      w={["265px", "330px", "620px", "395px", "460px", "555px", "630px"]}
     >
       <HStack>
         <Text
@@ -23,6 +23,7 @@ export const TopAlbumsCard = ({ number, title, artist, time }: Props) => {
           pt="3px"
           pb="3px"
           color="gray.500"
+          display={["none", "flex", "flex", "flex", "flex", "flex", "flex"]}
           fontSize={["13px", "14px", "16px", "17px", "10px"]}
         >
           {number}
@@ -46,7 +47,7 @@ export const TopAlbumsCard = ({ number, title, artist, time }: Props) => {
         </Box>
         <Text
           w={["50px", "50px", "60px", "60px"]}
-          pr={["5px", "5px", "5px", "5px"]}
+          pr={["5px", "5px", "5px", "10px"]}
           color="gray.500"
           fontSize={["12px", "14px", "16px", "16px", "16px"]}
         >
