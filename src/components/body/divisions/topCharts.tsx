@@ -7,31 +7,37 @@ export const TopChartsBody = () => {
   return (
     <>
       <Stack
-        mt={["20px", "20px", "30px", "30px", "30px", "30px"]}
+        bgColor="red"
         pb="10px"
-        w={["43%", "86%", "83%", "88%", "85%", "85%"]}
-        ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
         display="flex"
         alignContent="center"
         justifyContent="space-between"
-        bgColor="red"
+        w={["43%", "86%", "83%", "88%", "85%", "85%"]}
+        // w={["43%","43%", "86%", "83%", "88%", "85%", "85%"]}
+        mt={["20px", "20px", "30px", "30px", "30px", "30px"]}
+        // mt={["20px","20px", "20px", "30px", "30px", "30px", "30px"]}
+        ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
+        // ml={["20px","20px", "40px", "80px", "80px", "80px", "80px"]}
       >
         <HStack
           align="center"
           justifyContent="space-between"
           w={["98%", "98%", "98%", "98%", "98%", "98%"]}
+          // w={["98%","98%", "98%", "98%", "98%", "98%", "98%"]}
           h={["60px", "80px", "80px", "80px", "80px", "80px"]}
+          // h={["60px","60px", "80px", "80px", "80px", "80px", "80px"]}
         >
           <Stack direction="row" ml="10px">
             <Box mr="10px" pt="3px" pb="3px" color="gray.500">
               <AiFillLike size="25px" />
             </Box>
             <Text
-              fontSize={["14px", "14px", "14px", "14px", "14px", "16px"]}
               p="5px"
-              fontWeight="bold"
               color="gray.700"
+              fontWeight="bold"
               textAlign="center"
+              fontSize={["14px", "14px", "14px", "14px", "14px", "16px"]}
+              // fontSize={["14px","14px", "14px", "14px", "14px", "14px", "16px"]}
             >
               Top Charts by City
             </Text>
@@ -45,13 +51,16 @@ export const TopChartsBody = () => {
       </Stack>
 
       <Stack
-        direction="row"
-        display="flex"
         pt="10px"
-        w={["43%", "86%", "83%", "88%", "85%", "85%"]}
-        ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
-        gap={["1", "1", "1", "2", "2", "4"]}
+        display="flex"
+        direction="row"
         overflowX="auto"
+        gap={["1", "1", "1", "2", "2", "4"]}
+        // gap={["1","1", "1", "1", "2", "2", "4"]}
+        w={["43%", "86%", "83%", "88%", "85%", "85%"]}
+        // w={["43%","43%", "86%", "83%", "88%", "85%", "85%"]}
+        ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
+        // ml={["20px","20px", "40px", "80px", "80px", "80px", "80px"]}
       >
         <TopCharts
           city={"New York City"}

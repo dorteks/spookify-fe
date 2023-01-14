@@ -11,9 +11,10 @@ type Props = {
 export const TopSinglesCard = ({ number, title, artist, time }: Props) => {
   return (
     <Card
-      w={["340px", "550px", "370px", "460px", "555px", "630px"]}
       h="80px"
       justify="center"
+      w={["340px", "550px", "370px", "460px", "555px", "630px"]}
+      // w={["340px","340px", "550px", "370px", "460px", "555px", "630px"]}
     >
       <HStack>
         <Text w="25px" mr="10px" ml="10px" pt="3px" pb="3px" color="gray.500">
@@ -21,10 +22,11 @@ export const TopSinglesCard = ({ number, title, artist, time }: Props) => {
         </Text>
         <Img width="60px" boxSize={["45px"]} />
         <Box
-          w={["180px", "180px", "180px", "250px", "250px", "380px"]}
           pr="10px"
           pl="20px"
           color="gray.500"
+          w={["180px", "180px", "180px", "250px", "250px", "380px"]}
+          // w={["180px","180px", "180px", "180px", "250px", "250px", "380px"]}
         >
           <Text fontSize="14px" fontWeight="bold">
             {title}

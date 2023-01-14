@@ -13,35 +13,42 @@ export const RecommendedAlbumsBody = () => {
         alignContent="center"
         justifyContent="space-between"
         w={["43%", "86%", "83%", "88%", "85%", "85%"]}
+        // w={["43%","43%", "86%", "83%", "88%", "85%", "85%"]}
         mt={["30px", "30px", "30px", "30px", "30px", "30px"]}
+        // mt={["30px","30px", "30px", "30px", "30px", "30px", "30px"]}
         ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
+        // ml={["20px","20px", "40px", "80px", "80px", "80px", "80px"]}
       >
         <HStack
           align="center"
           justifyContent="space-between"
           w={["98%", "98%", "98%", "98%", "98%", "98%"]}
+          // w={["98%", "98%", "98%", "98%", "98%", "98%"]}
           h={["60px", "80px", "80px", "80px", "80px", "80px"]}
+          // h={["60px","60px", "80px", "80px", "80px", "80px", "80px"]}
         >
           <Stack direction="row" ml="10px">
             <Box mr="10px" pt="3px" pb="3px" color="gray.500">
               <AiFillLike size="25px" />
             </Box>
             <Text
-              fontSize={["14px", "14px", "14px", "14px", "14px", "16px"]}
               p="5px"
-              fontWeight="bold"
               color="gray.700"
+              fontWeight="bold"
               textAlign="center"
+              fontSize={["14px", "14px", "14px", "14px", "14px", "16px"]}
+              // fontSize={["14px","14px", "14px", "14px", "14px", "14px", "16px"]}
             >
               Recommended Albums
             </Text>
           </Stack>
 
           <Stack
+            pr="30px"
             direction="row"
             color="gray.500"
-            pr="30px"
             gap={["1", "5", "5", "5"]}
+            // gap={["1","1", "5", "5", "5"]}
           >
             <BsArrowLeftCircle size="35px" />
             <BsArrowRightCircle size="35px" />
@@ -55,8 +62,11 @@ export const RecommendedAlbumsBody = () => {
         direction="row"
         overflowX="auto"
         gap={["1", "1", "1", "2", "2", "4"]}
+        // gap={["1","1", "1", "1", "2", "2", "4"]}
         w={["43%", "86%", "83%", "88%", "85%", "85%"]}
+        // w={["43%","43%", "86%", "83%", "88%", "85%", "85%"]}
         ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
+        // ml={["20px","20px", "40px", "80px", "80px", "80px", "80px"]}
       >
         <RecommendedAlbums
           title={"Good Things"}

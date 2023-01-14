@@ -3,8 +3,8 @@ import { SlArrowRight } from "react-icons/sl";
 import { Avatar, Box, Stack, Text } from "@chakra-ui/react";
 
 type Props = {
-  title: React.ReactNode;
   leftIcon: any;
+  title: React.ReactNode;
 };
 
 // bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
@@ -12,16 +12,16 @@ type Props = {
 export const Main = ({ title, leftIcon }: Props) => {
   return (
     <Stack
-      direction="row"
+      p="13px"
       pb="15px"
       pl="20px"
-      p="13px"
+      direction="row"
       _hover={{
-        backgroundColor: "white",
         p: "13px",
-        borderRadius: "25px",
-        color: "purple.600",
         fontWeight: "bold",
+        color: "purple.600",
+        borderRadius: "25px",
+        backgroundColor: "white",
       }}
     >
       <Stack direction="row" ml="15px">
@@ -29,14 +29,19 @@ export const Main = ({ title, leftIcon }: Props) => {
           {leftIcon}
         </Box>
         <Text
-          width={["100px", "100px", "130px", "130px", "130px", "130px"]}
-          fontSize={["14px", "14px", "14px", "15px", "16px", "16px"]}
           fontWeight="bold"
+          fontSize={["14px", "14px", "14px", "15px", "16px", "16px"]}
+          // fontSize={["14px","14px", "14px", "14px", "15px", "16px", "16px"]}
+          width={["100px", "100px", "130px", "130px", "130px", "130px"]}
+          // width={["100px","100px", "100px", "130px", "130px", "130px", "130px"]}
         >
           {title}
         </Text>
       </Stack>
-      <Stack pl={["0px", "0px", "0px", "10px", "40px"]}>
+      <Stack
+        // pl={["0px","0px", "0px", "0px", "10px", "40px"]}
+        pl={["0px", "0px", "0px", "10px", "40px", "40px"]}
+      >
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
@@ -48,16 +53,16 @@ export const Main = ({ title, leftIcon }: Props) => {
 export const Music = ({ title, leftIcon }: Props) => {
   return (
     <Stack
-      direction="row"
+      p="13px"
       pb="15px"
       pl="20px"
-      p="13px"
+      direction="row"
       _hover={{
-        backgroundColor: "white",
         p: "13px",
-        borderRadius: "25px",
         color: "red.600",
         fontWeight: "bold",
+        borderRadius: "25px",
+        backgroundColor: "white",
       }}
     >
       <Stack direction="row" ml="15px">
@@ -65,14 +70,19 @@ export const Music = ({ title, leftIcon }: Props) => {
           {leftIcon}
         </Box>
         <Text
-          width={["100px", "100px", "110px", "110px", "110px"]}
-          fontSize={["14px", "14px", "16px", "15px", "16px"]}
           fontWeight="bold"
+          fontSize={["14px", "14px", "16px", "15px", "16px"]}
+          // fontSize={["14px","14px", "14px", "16px", "15px", "16px"]}
+          width={["100px", "100px", "110px", "110px", "110px"]}
+          // width={["100px","100px", "100px", "110px", "110px", "110px"]}
         >
           {title}
         </Text>
       </Stack>
-      <Stack pl={["", "", "30px", "30px", "10px", "60px"]}>
+      <Stack
+        pl={["", "", "30px", "30px", "60px", "60px"]}
+        // pl={["", "","", "30px", "30px", "10px", "60px"]}
+      >
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
@@ -84,16 +94,16 @@ export const Music = ({ title, leftIcon }: Props) => {
 export const Playlists = ({ title, leftIcon }: Props) => {
   return (
     <Stack
-      direction="row"
+      p="13px"
       pb="15px"
       pl="20px"
-      p="13px"
+      direction="row"
       _hover={{
-        backgroundColor: "white",
         p: "13px",
-        borderRadius: "25px",
-        color: "purple.600",
         fontWeight: "bold",
+        color: "purple.600",
+        borderRadius: "25px",
+        backgroundColor: "white",
       }}
     >
       <Stack direction="row" ml="15px">
@@ -101,14 +111,19 @@ export const Playlists = ({ title, leftIcon }: Props) => {
           {leftIcon}
         </Box>
         <Text
-          width={["100px", "100px", "100px", "130px", "130px", "130px"]}
-          fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
           fontWeight="bold"
+          fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
+          // fontSize={["12px","12px", "12px", "12px", "14px", "14px", "15px"]}
+          width={["100px", "100px", "100px", "130px", "130px", "130px"]}
+          // width={["100px","100px", "100px", "100px", "130px", "130px", "130px"]}
         >
           {title}
         </Text>
       </Stack>
-      <Stack pl={["0px", "0px", "0px", "10px", "40px"]}>
+      <Stack
+        pl={["0px", "0px", "0px", "10px", "40px"]}
+        // pl={["0px","0px", "0px", "0px", "10px", "40px"]}
+      >
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
@@ -120,37 +135,42 @@ export const Playlists = ({ title, leftIcon }: Props) => {
 export const Artists = ({ title, leftIcon }: Props) => {
   return (
     <Stack
-      direction="row"
+      p="13px"
       pb="15px"
       pl="20px"
-      p="13px"
+      direction="row"
       _hover={{
-        backgroundColor: "white",
         p: "13px",
-        borderRadius: "25px",
         color: "red.600",
         fontWeight: "bold",
+        borderRadius: "25px",
+        backgroundColor: "white",
       }}
     >
       <Stack direction="row" ml="15px">
         <Avatar
-          size="sm"
-          mr="10px"
           pt="3px"
           pb="3px"
-          borderRadius="25px"
+          size="sm"
+          mr="10px"
           src={leftIcon}
+          borderRadius="25px"
         />
         <Text
-          width={["100px", "100px", "100px", "110px", "100px", "110px"]}
-          fontSize={["12px", "12px", "12px", "14px", "12px", "14px"]}
-          fontWeight="bold"
           p="3px"
+          fontWeight="bold"
+          fontSize={["12px", "12px", "12px", "14px", "12px", "14px"]}
+          // fontSize={["12px","12px", "12px", "12px", "14px", "12px", "14px"]}
+          width={["100px", "100px", "100px", "110px", "100px", "110px"]}
+          // width={["100px","100px", "100px", "100px", "110px", "100px", "110px"]}
         >
           {title}
         </Text>
       </Stack>
-      <Stack pl={["0px", "0px", "0px", "10px", "60px"]}>
+      <Stack
+        pl={["0px", "0px", "0px", "10px", "60px"]}
+        // pl={["0px", "0px","0px", "0px", "10px", "60px"]}
+      >
         <Box p="5px">
           <SlArrowRight size="10px" />
         </Box>
