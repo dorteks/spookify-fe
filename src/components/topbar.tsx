@@ -14,6 +14,7 @@ import {
   Stack,
   Input,
   IconButton,
+  Avatar,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
@@ -116,8 +117,8 @@ const Topbar = () => {
       // bgColor="#f1faee"
       h={"100px"}
       as="section"
-      width={["", "", "", "51%", "60%", "69%"]}
-      // width={["", "", "","", "51%", "60%", "69%"]}
+      width={["", "", "", "50%", "58%", "66%"]}
+      // width={["", "", "","", "50%", "60%", "69%"]}
       bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]}
       // bgColor={["pink","purple", "blue", "yellow", "brown", "green", "orange"]}
     >
@@ -134,12 +135,12 @@ const Topbar = () => {
           ml="15px"
           mr="15px"
           bgColor="red"
-          w={["3%", "5%", "4%", "3%", "3%", "3%"]}
+          w={["3%", "5%", "4%", "4%", "4%", "4%"]}
           // w={["3%","3%", "5%", "4%", "3%", "3%", "3%"]}
           display={["none", "none", "none", "flex", "flex", "flex"]}
           // display={["none","none", "none", "none", "flex", "flex", "flex"]}
         >
-          <Img boxSize="38px" bgColor="gray.500" />
+          <Img boxSize="50px" bgColor="gray.500" src="/images/interface.png" />
         </Box>
 
         <Box
@@ -288,7 +289,7 @@ const Topbar = () => {
           display={["none", "none", "none", "flex", "flex", "flex"]}
           // display={["none", "none","none", "none", "flex", "flex", "flex"]}
         >
-          <Img boxSize="60px" bgColor="gray.500" />
+          <Avatar size="lg" ml="5px" />
         </Box>
       </Stack>
     </Box>

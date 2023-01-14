@@ -18,7 +18,7 @@ const customThemeConfig: ThemeOverride = {
 
 const breakpoints = {
   // am: "321px",
-  em: "426px",
+  em: "321px",
   sm: "769px",
   md: "1025px",
   lg: "1441px",
