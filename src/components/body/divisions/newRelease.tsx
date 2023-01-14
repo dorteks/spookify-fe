@@ -4,13 +4,18 @@ import { NewAlbumNew } from "../reusableComponents/albums";
 export const NewReleaseBody = () => {
   return (
     <Stack
-      direction="row"
-      display="flex"
       pt="50px"
-      w={["43%", "86%", "83%", "88%", "85%", "85%"]}
-      ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
-      gap={["1", "1", "1", "2", "2", "4"]}
+      display="flex"
+      direction="row"
       overflowX="auto"
+      gap={["1", "1", "1", "2", "2", "4"]}
+      // gap={["1","1", "1", "1", "2", "2", "4"]}
+
+      w={["43%", "86%", "83%", "88%", "85%", "85%"]}
+      // w={["43%","43%", "86%", "83%", "88%", "85%", "85%"]}
+
+      ml={["20px", "40px", "80px", "80px", "80px", "80px"]}
+      // ml={["20px","20px", "40px", "80px", "80px", "80px", "80px"]}
     >
       <NewAlbumNew
         title={"THE RADIO SHOW"}

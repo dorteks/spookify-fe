@@ -19,12 +19,12 @@ export const SidebarMenu = () => {
         <Box pl="5px" pr="10px" pt="40px">
           <VStack align="left">
             <Text
-              fontSize={"14px"}
-              fontWeight="bold"
-              color="gray.700"
               ml="20px"
               mt="10px"
               mb="20px"
+              color="gray.700"
+              fontSize={"14px"}
+              fontWeight="bold"
             >
               MAIN CATEGORIES
             </Text>
@@ -39,12 +39,12 @@ export const SidebarMenu = () => {
         <Box pl="5px" pr="10px" pt="45px">
           <VStack align="left">
             <Text
-              fontSize={"14px"}
-              fontWeight="bold"
-              color="gray.700"
               ml="20px"
               mt="10px"
               mb="20px"
+              color="gray.700"
+              fontSize={"14px"}
+              fontWeight="bold"
             >
               YOUR MUSIC
             </Text>
@@ -55,12 +55,12 @@ export const SidebarMenu = () => {
         <Box pl="5px" pr="10px" pt="45px">
           <VStack align="left">
             <Text
-              fontSize={"14px"}
-              fontWeight="bold"
-              color="gray.700"
               ml="20px"
               mt="10px"
               mb="20px"
+              color="gray.700"
+              fontSize={"14px"}
+              fontWeight="bold"
             >
               YOUR PLAYLISTS
             </Text>
@@ -80,10 +80,10 @@ export const SidebarMenu = () => {
             ml="20px"
             mt="10px"
             mb="20px"
-            width={["120px", "120px", "120px", "120px", "120px", "150px"]}
             bgColor="white"
-            borderRadius="25px"
             fontSize={"14px"}
+            borderRadius="25px"
+            width={["120px", "120px", "120px", "120px", "120px", "150px"]}
           >
             New Playlist
           </Button>
@@ -91,12 +91,12 @@ export const SidebarMenu = () => {
         <Box pl="5px" pr="10px" pt="45px">
           <VStack align="left">
             <Text
-              fontSize={"14px"}
-              fontWeight="bold"
-              color="gray.700"
               ml="20px"
               mt="10px"
               mb="20px"
+              color="gray.700"
+              fontSize={"14px"}
+              fontWeight="bold"
             >
               YOUR FAVOURITE ARTISTS
             </Text>

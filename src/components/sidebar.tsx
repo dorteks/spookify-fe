@@ -10,44 +10,51 @@ import { FaCompass } from "react-icons/fa";
 import { RiPlayListFill } from "react-icons/ri";
 import { BiNetworkChart } from "react-icons/bi";
 import { CgEditBlackPoint } from "react-icons/cg";
-import { Box, Button, HStack, Img, Text, VStack } from "@chakra-ui/react";
 import { Artists, Main, Music, Playlists } from "./sidebar/reusables";
+import { Box, Button, HStack, Img, Text, VStack } from "@chakra-ui/react";
 
 const Sidebar = () => {
   return (
     <Box height="auto" bgColor="#f1faee">
       <Box
-        display={["none", "none", "none", "flex", "flex", "flex"]}
-        pl={["20px"]}
         pr="10px"
         pt="25px"
+        pl={["20px"]}
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
       >
         <HStack>
           <Img
-            boxSize="30px"
+            mr="5px"
+            boxSize={["35px", "35px", "40px", "40px"]}
             borderRadius="full"
             bgColor="purple.600"
-            mr="5px"
           />
-          <Text fontSize={["0px", "16px", "16px", "16px", "16px", "16px"]}>
+          <Text
+            fontWeight="bold"
+            fontSize={["0px", "16px", "16px", "20px", "20px", "23px"]}
+            // fontSize={["0px","0px", "16px", "16px", "16px", "16px", "16px"]}
+          >
             Constructor UI Kit
           </Text>
         </HStack>
       </Box>
       <Box
-        display={["none", "none", "none", "flex", "flex", "flex"]}
         pl="5px"
         pr="10px"
         pt="40px"
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
       >
         <VStack align="left">
           <Text
-            fontSize={["0px", "0px", "14px", "14px", "14px", "14px"]}
-            fontWeight="bold"
-            color="gray.700"
             ml="20px"
             mt="10px"
             mb="20px"
+            color="gray.700"
+            fontWeight="bold"
+            fontSize={["0px", "0px", "14px", "14px", "14px", "14px"]}
+            // fontSize={["0px","0px", "0px", "14px", "14px", "14px", "14px"]}
           >
             MAIN CATEGORIES
           </Text>
@@ -60,19 +67,21 @@ const Sidebar = () => {
         </VStack>
       </Box>
       <Box
-        display={["none", "none", "none", "flex", "flex", "flex"]}
         pl="5px"
         pr="10px"
         pt="45px"
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
       >
         <VStack align="left">
           <Text
-            fontSize={["14px", "14px", "14px", "14px", "14px", "14px"]}
-            fontWeight="bold"
-            color="gray.700"
             ml="20px"
             mt="10px"
             mb="20px"
+            color="gray.700"
+            fontWeight="bold"
+            fontSize={["14px", "14px", "14px", "14px", "14px", "14px"]}
+            // fontSize={["14px", "14px", "14px", "14px", "14px", "14px", "14px"]}
           >
             YOUR MUSIC
           </Text>
@@ -83,12 +92,12 @@ const Sidebar = () => {
       <Box pl="5px" pr="10px" pt="45px">
         <VStack align="left">
           <Text
-            fontSize={["14px"]}
-            fontWeight="bold"
-            color="gray.700"
             ml="20px"
             mt="10px"
             mb="20px"
+            color="gray.700"
+            fontWeight="bold"
+            fontSize={["14px"]}
           >
             YOUR PLAYLISTS
           </Text>
@@ -101,37 +110,40 @@ const Sidebar = () => {
         </VStack>
       </Box>
       <Box
-        display={["none", "none", "none", "flex", "flex", "flex"]}
         pl="5px"
         pr="10px"
         pt="45px"
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
       >
         <Button
           ml="20px"
           mt="10px"
           mb="20px"
-          width={["0px", "0px", "0px", "120px", "150px"]}
           bgColor="white"
           borderRadius="25px"
           fontSize={["15px"]}
+          width={["0px", "0px", "0px", "120px", "150px"]}
+          // width={["0px","0px", "0px", "0px", "120px", "150px"]}
         >
           New Playlist
         </Button>
       </Box>
       <Box
-        display={["none", "none", "none", "flex", "flex", "flex"]}
         pl="5px"
         pr="10px"
         pt="45px"
+        display={["none", "none", "none", "flex", "flex", "flex"]}
+        // display={["none","none", "none", "none", "flex", "flex", "flex"]}
       >
         <VStack align="left">
           <Text
-            fontSize={["14px"]}
-            fontWeight="bold"
-            color="gray.700"
             ml="20px"
             mt="10px"
             mb="20px"
+            color="gray.700"
+            fontWeight="bold"
+            fontSize={["14px"]}
           >
             YOUR FAVOURITE ARTISTS
           </Text>

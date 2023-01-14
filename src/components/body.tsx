@@ -8,12 +8,11 @@ import { TopSinglesTopAlbumsBody } from "./body/divisions/topSinglestopAlbums";
 const Body = () => {
   return (
     <Box
-      width={["42%", "34.5%", "42%", "43%", "57%", "61.5%"]}
       h="auto"
       bgColor="gray.50"
+      width={["42%", "34.5%", "42%", "43%", "57%", "61.5%"]}
+      // width={["42%","42%", "34.5%", "42%", "43%", "57%", "61.5%"]}
     >
-      {/* bgColor={["purple", "blue", "yellow", "brown", "green", "orange"]} */}
-
       <NewAlbumBody />
       <RecommendedAlbumsBody />
       <TopSinglesTopAlbumsBody />

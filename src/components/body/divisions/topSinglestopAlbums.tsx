@@ -1,12 +1,12 @@
 import {
   Box,
   Card,
-  CardBody,
-  CardHeader,
+  Text,
+  Stack,
   HStack,
   Spacer,
-  Stack,
-  Text,
+  CardBody,
+  CardHeader,
 } from "@chakra-ui/react";
 import { MdShowChart } from "react-icons/md";
 import { TopAlbumsCard } from "../reusableComponents/topalbums";
@@ -15,15 +15,21 @@ import { TopSinglesCard } from "../reusableComponents/topsingles";
 export const TopSinglesTopAlbumsBody = () => {
   return (
     <Stack
-      direction={["column", "column", "row", "row", "row", "row"]}
       mt="60px"
-      pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
       gap={["2", "2", "2", "1", "4", "8"]}
+      // gap={["2","2", "2", "2", "1", "4", "8"]}
+
+      pl={["20px", "40px", "80px", "80px", "80px", "80px"]}
+      // pl={["20px","20px", "40px", "80px", "80px", "80px", "80px"]}
+
+      direction={["column", "column", "row", "row", "row", "row"]}
+      // direction={["column","column", "column", "row", "row", "row", "row"]}
     >
       <Card
         h="auto"
-        width={["380px", "628px", "410px", "512px", "615px", "673px"]}
         bgColor="gray.50"
+        width={["380px", "628px", "410px", "512px", "615px", "673px"]}
+        // width={["380px","380px", "628px", "410px", "512px", "615px", "673px"]}
       >
         <CardHeader mt="20px">
           <HStack align="left">
@@ -31,12 +37,12 @@ export const TopSinglesTopAlbumsBody = () => {
               <MdShowChart size="20px" />
             </Box>
             <Text
-              fontSize="16px"
-              fontWeight="bold"
-              color="gray.700"
               ml="20px"
               mt="10px"
               mb="20px"
+              fontSize="16px"
+              color="gray.700"
+              fontWeight="bold"
             >
               Top Singles
             </Text>
@@ -85,8 +91,9 @@ export const TopSinglesTopAlbumsBody = () => {
       {/* top albums */}
       <Card
         h="auto"
-        width={["380px", "628px", "410px", "512px", "615px", "673px"]}
         bgColor="gray.50"
+        width={["380px", "628px", "410px", "512px", "615px", "673px"]}
+        // width={["380px","380px", "628px", "410px", "512px", "615px", "673px"]}
       >
         <CardHeader mt="20px">
           <HStack align="left">
@@ -94,12 +101,12 @@ export const TopSinglesTopAlbumsBody = () => {
               <MdShowChart size="20px" />
             </Box>
             <Text
-              fontSize="16px"
-              fontWeight="bold"
-              color="gray.700"
               ml="20px"
               mt="10px"
               mb="20px"
+              fontSize="16px"
+              color="gray.700"
+              fontWeight="bold"
             >
               Top Albums
             </Text>
