@@ -7,7 +7,6 @@ export const TopChartsBody = () => {
   return (
     <>
       <Stack
-        bgColor="red"
         pb="10px"
         display="flex"
         alignContent="center"

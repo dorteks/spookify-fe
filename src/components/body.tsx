@@ -9,7 +9,7 @@ const Body = () => {
   return (
     <Box
       h="auto"
-      bgColor="gray.50"
+      bgColor="#E8ECEB"
       width={["31.5%", "21%", "34.5%", "42%", "43%", "57%", "61.5%"]}
     >
       <NewAlbumBody />

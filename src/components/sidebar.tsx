@@ -15,7 +15,7 @@ import { Box, Button, HStack, Img, Text, VStack } from "@chakra-ui/react";
 
 const Sidebar = () => {
   return (
-    <Box height="auto" bgColor="#f1faee">
+    <Box height="full" bgColor="#E8ECEB">
       <Box
         pr="10px"
         pt="25px"
@@ -25,9 +25,9 @@ const Sidebar = () => {
         <HStack>
           <Img
             mr="5px"
-            boxSize={["35px", "35px", "40px", "40px"]}
+            boxSize={["45px", "45px", "45px", "45px"]}
             borderRadius="full"
-            bgColor="purple.600"
+            bgColor="purple.400"
           />
           <Text
             fontWeight="bold"

@@ -23,7 +23,8 @@ export const TopSinglesTopAlbumsBody = () => {
     >
       <Card
         h="auto"
-        bgColor="gray.50"
+        border="1px"
+        borderColor="gray.300"
         width={["290px", "370px", "670px", "435px", "512px", "615px", "673px"]}
       >
         <CardHeader mt="20px">
@@ -79,7 +80,8 @@ export const TopSinglesTopAlbumsBody = () => {
       {/* top albums */}
       <Card
         h="auto"
-        bgColor="gray.50"
+        border="1px"
+        borderColor="gray.300"
         width={["290px", "370px", "670px", "435px", "512px", "615px", "673px"]}
       >
         <CardHeader mt="20px">
