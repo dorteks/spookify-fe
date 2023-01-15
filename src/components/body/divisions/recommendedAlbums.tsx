@@ -8,7 +8,6 @@ export const RecommendedAlbumsBody = () => {
     <>
       <Stack
         pb="10px"
-        bgColor="red"
         display="flex"
         alignContent="center"
         justifyContent="space-between"

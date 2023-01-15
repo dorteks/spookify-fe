@@ -1,41 +1,47 @@
 import { useState } from "react";
 import { GrClose } from "react-icons/gr";
 import { RxAvatar } from "react-icons/rx";
-import { ConstructorIcon } from "../topbar";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { AiTwotoneSetting } from "react-icons/ai";
 import { RiPlayListAddLine } from "react-icons/ri";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { SidebarMenu } from "../sidebar/sidebarmenu";
-import { Box, Flex, IconButton, Stack } from "@chakra-ui/react";
+import { Box, Flex, IconButton, Img, Stack } from "@chakra-ui/react";
 
 export const TopbarSmall = () => {
   const [display, changeDisplay] = useState("none");
 
   return (
-    <Box ml="-24" display={["flex", "none", "none", "none", "none", "none"]}>
+    <Box
+      ml="-24"
+      bgColor="#E8ECEB"
+      display={["flex", "none", "none", "none", "none", "none"]}
+    >
       <Box>
         <Stack direction="row" align="center" gap={"1"}>
           <IconButton
             boxSize="40px"
-            bgColor="gray.500"
+            bgColor="white"
+            borderRadius="25px"
             aria-label="Open Menu"
             icon={<HamburgerIcon />}
             onClick={() => changeDisplay("flex")}
           />
 
           <IconButton
-            boxSize="25px"
-            icon={<ConstructorIcon />}
+            borderRadius="30px"
+            backgroundColor="purple.400"
+            borderWidth="0"
             aria-label="Constructor Icon"
             _hover={{
               fontWeight: "bold",
-              borderRadius: "25px",
+              borderRadius: "30px",
               alignItems: "center",
               backgroundColor: "white",
             }}
           />
           <Stack
+            color="gray.500"
             _hover={{
               p: "10px",
               boxSize: "50px",
@@ -48,6 +54,7 @@ export const TopbarSmall = () => {
             <BsFillBookmarkFill size="40px" />
           </Stack>
           <Stack
+            color="gray.500"
             _hover={{
               p: "10px",
               boxSize: "50px",
@@ -60,6 +67,7 @@ export const TopbarSmall = () => {
             <RiPlayListAddLine size="40px" />
           </Stack>
           <Stack
+            color="gray.500"
             _hover={{
               p: "10px",
               boxSize: "50px",
@@ -72,6 +80,7 @@ export const TopbarSmall = () => {
             <AiTwotoneSetting size="40px" />
           </Stack>
           <Stack
+            color="gray.500"
             _hover={{
               p: "10px",
               boxSize: "50px",

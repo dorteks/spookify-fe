@@ -4,7 +4,6 @@ import { NewAlbum } from "../reusableComponents/albums";
 export const NewAlbumBody = () => {
   return (
     <Stack
-      bgColor="yellow"
       pt="40px"
       pb="15px"
       direction={["column", "column", "row", "row", "row", "row", "row"]}

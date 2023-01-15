@@ -69,7 +69,7 @@ export const RecommendedAlbums = ({ title, artist, bckImage }: Props) => {
           {}
         </Card>
         <Card
-          bgColor="gray.300"
+          bgColor="white"
           w={["200px", "200px", "230px", "280px", "250px", "198px", "220px"]}
           h={["90px", "90px", "90px", "90px", "100px", "100px", "100px"]}
         >
@@ -96,7 +96,7 @@ export const TopCharts = ({ city, bckImage }: TopChartsProps) => {
       <VStack>
         <Card
           h="50px"
-          bgColor="gray.300"
+          bgColor="white"
           w={["250px", "250px", "250px", "250px", "250px", "300px", "300px"]}
         >
           <Stack

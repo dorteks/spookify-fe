@@ -13,7 +13,12 @@ const customThemeConfig: ThemeOverride = {
   components: {
     Button: {},
   },
-  colors: {},
+  colors: {
+    primary: {
+      "primary.1": "#F0EFF4",
+      "primary.2": "#E8ECEB",
+    },
+  },
 };
 
 const breakpoints = {

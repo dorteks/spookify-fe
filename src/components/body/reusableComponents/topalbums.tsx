@@ -11,8 +11,9 @@ type Props = {
 export const TopAlbumsCard = ({ number, title, artist, time }: Props) => {
   return (
     <Card
-      h={["80px", "90px", "90px", "80px"]}
+      bgColor="white"
       justify="center"
+      h={["80px", "90px", "90px", "80px"]}
       w={["265px", "330px", "620px", "395px", "460px", "555px", "630px"]}
     >
       <HStack>
