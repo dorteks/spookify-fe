@@ -33,7 +33,7 @@ const Sidebar = () => {
             fontWeight="bold"
             fontSize={["0px", "16px", "16px", "20px", "20px", "23px"]}
           >
-            Constructor UI Kit
+            SPOOKIFY
           </Text>
         </HStack>
       </Box>
