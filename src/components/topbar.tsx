@@ -113,14 +113,6 @@ export const SearchBox = () => {
   );
 };
 
-export const ConstructorIcon = () => {
-  return (
-    <Box bgColor="#E8ECEB" borderRadius="25px">
-      <Img src="/images/constructor.jpg" />
-    </Box>
-  );
-};
-
 const Topbar = () => {
   const [display, changeDisplay] = useState("none");
 
@@ -219,7 +211,7 @@ const Topbar = () => {
                 <IconButton
                   borderRadius="25px"
                   bgColor="purple.400"
-                  aria-label="Constructor Icon"
+                  aria-label="spookify icon"
                   ml={["-4", "-4", "-1", "0", "0", "0", "0"]}
                   _hover={{
                     borderRadius: "25px",
@@ -252,7 +244,7 @@ const Topbar = () => {
                 ]}
                 w={["0", "0", "0", "200px", "0", "0", "0"]}
               >
-                Constructor Kit
+                SPOOKIFY
               </Box>
             </Box>
 
